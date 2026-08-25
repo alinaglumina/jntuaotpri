@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import GlobalSearch from '../GlobalSearch.jsx';
 import { SearchContext } from '../../hooks/useGlobalSearch.js';
@@ -11,6 +11,9 @@ import NavProgress from '../NavProgress.jsx';
 import Seo from '../Seo.jsx';
 export default function RootLayout() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const location = useLocation();
+  const tabParam = new URLSearchParams(location.search).get('tab');
+  const isHome = location.pathname === '/' && (!tabParam || tabParam === 'home');
   useEffect(() => {
     const onKey = (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setSearchOpen(true); }
@@ -27,7 +30,7 @@ export default function RootLayout() {
       <NavProgress />
       <Header />
       <OtpriMegaNav />
-      <NewsTicker />
+      {isHome && <NewsTicker />}
       <Breadcrumbs />
       <main id="main" tabIndex={-1} className="flex-1 focus:outline-none"><Outlet /></main>
       <Footer />

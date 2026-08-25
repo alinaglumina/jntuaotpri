@@ -92,11 +92,12 @@ export default function DirectoratePage({ resolveKey }) {
   // Match by the menu item's stable menuKey (set via header nav's ?tab=...),
   // falling back to the first tab (Home) when no param or no match.
   const active = (tabParam && flat.find((t) => t.item?.menuKey === tabParam)) || flat[0];
+  const isHome = !tabParam || tabParam === 'home';
 
   return (
     <>
-      <HeroSlider slides={slides} />
-      <PageShell>
+      {isHome && <HeroSlider slides={slides} />}
+      <PageShell title={isHome ? undefined : active?.label}>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[280px_1fr]">
           <aside className="space-y-6">
             {director && (
