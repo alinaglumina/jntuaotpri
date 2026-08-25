@@ -107,46 +107,26 @@ export default function AdminLayout() {
     }
   }
 
-  // Super Admin: one collapsible section per Directorate, listing that
-  // directorate's scoped resources when expanded. Directors don't see this —
-  // their own sidebar already only shows their directorate's data (server-scoped).
+  // Single-institute site (OTPRI): always show OTPRI's own menu tree directly,
+  // no directorate-picker/collapsing needed since there's only one "directorate".
   if (isAdmin) {
-    // Shared builder — used for both Directorates and Important Units, since
-    // both are backed by the same directorate-page + directorate-menu system.
-    const buildCollapsibleGroup = (label, slug, iconClass) => {
-      const isOpen = !!expandedDirs[slug];
-      return {
-        label: (
-          <button type="button" onClick={() => toggleDir(slug)} className="flex w-full items-center justify-between text-left hover:text-white">
-            <span><i className={`fa-solid ${iconClass} mr-1.5 text-[10px]`} aria-hidden="true" />{label}</span>
-            <i className={`fa-solid ${isOpen ? 'fa-chevron-down' : 'fa-chevron-right'} text-[9px]`} aria-hidden="true" />
-          </button>
-        ),
-        items: !isOpen ? [] : [
-          // Migrated public-page structure (Home, About, Courses Offered, etc.)
-          ...(menuByDirectorate[slug]?.length
-            ? [
-                ...menuByDirectorate[slug].map((item) => ({
-                  to: menuItemHref(item, slug),
-                  label: `${'\u2003'.repeat(item.depth)}${item.label}`,
-                  icon: item.children.length ? 'fa-folder' : (TYPE_ICON[item.type] || 'fa-file'),
-                  onClick: close,
-                })),
-                { to: `/admin/r/directorate-menu?directorate=${slug}`, label: 'Manage menu items', icon: 'fa-sliders', onClick: close },
-              ]
-            : []),
-          // Underlying raw content resources (Notifications, Circulars, etc.) —
-          // always shown too, matching what a Director sees for their own directorate.
-          // "News" is excluded here since it now lives only under the Content group.
-          ...scopedEntries.filter(([key]) => key !== 'news').map(([key, d]) => ({
-            to: `/admin/r/${key}?directorate=${slug}`, label: d.label, icon: d.icon, onClick: close,
-          })),
-        ],
-      };
-    };
-    const directorateGroups = DIRECTORATES.map(([, dirLabel, slug]) => buildCollapsibleGroup(dirLabel, slug, 'fa-building-columns'));
-    const unitGroups = UNITS.map(([, unitLabel, slug]) => buildCollapsibleGroup(unitLabel, slug, 'fa-flag'));
-    groups.push(...directorateGroups, ...unitGroups);
+    const otpriItems = [
+      ...(menuByDirectorate['otpri']?.length
+        ? [
+            ...menuByDirectorate['otpri'].map((item) => ({
+              to: menuItemHref(item, 'otpri'),
+              label: `${'\u2003'.repeat(item.depth)}${item.label}`,
+              icon: item.children.length ? 'fa-folder' : (TYPE_ICON[item.type] || 'fa-file'),
+              onClick: close,
+            })),
+            { to: `/admin/r/directorate-menu?directorate=otpri`, label: 'Manage menu items', icon: 'fa-sliders', onClick: close },
+          ]
+        : []),
+      ...scopedEntries.filter(([key]) => key !== 'news').map(([key, d]) => ({
+        to: `/admin/r/${key}?directorate=otpri`, label: d.label, icon: d.icon, onClick: close,
+      })),
+    ];
+    groups.push({ label: 'OTPRI Site Pages', items: otpriItems });
   }
 
   // Curated CMS/admin groups (custom screens beyond the resource manifest).
@@ -187,7 +167,7 @@ export default function AdminLayout() {
 
   const nav = (
     <Sidebar
-      header={<Link to="/admin"><span className="block font-display text-lg font-bold text-white">JNTUA Admin</span><span className="text-xs text-white/60">{isAdmin ? 'Super Admin' : (user?.directorate || 'Director')}</span></Link>}
+      header={<Link to="/admin"><span className="block font-display text-lg font-bold text-white">OTPRI Admin</span><span className="text-xs text-white/60">{isAdmin ? 'Admin' : (user?.directorate || 'Staff')}</span></Link>}
       groups={groups}
       footer={<>
         <Link to="/admin/account/password" className="mb-2 block text-xs text-white/60 hover:text-gold"><i className="fa-solid fa-key" /> Change password</Link>
@@ -199,13 +179,13 @@ export default function AdminLayout() {
 
   return (
     <div className="min-h-screen bg-canvas text-content"><NavProgress />
-      <title>Admin — JNTUA</title>
+      <title>Admin — OTPRI</title>
       <aside className="fixed inset-y-0 left-0 hidden w-64 md:block">{nav}</aside>
       {open && <><aside className="fixed inset-y-0 left-0 z-50 w-64 md:hidden">{nav}</aside><div className="fixed inset-0 z-40 bg-black/40 md:hidden" onClick={close} /></>}
       <div className="md:pl-64">
         <header className="flex items-center gap-3 border-b border-line bg-surface px-4 py-3 md:hidden">
           <button onClick={() => setOpen(true)} aria-label="Menu"><i className="fa-solid fa-bars text-navy" /></button>
-          <span className="font-display font-bold text-navy">JNTUA Admin</span>
+          <span className="font-display font-bold text-navy">OTPRI Admin</span>
         </header>
         <div className="flex items-center justify-end gap-3 border-b border-line bg-surface px-6 py-2">
           <button onClick={() => setSearchOpen(true)} className="flex items-center gap-2 rounded-full border border-line px-3 py-1 text-xs text-muted hover:border-navy hover:text-brand">

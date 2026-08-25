@@ -2,9 +2,9 @@ import { useLocation } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import api from '../lib/axios.js';
 
-const SITE = 'JNTU Anantapur';
-const SITE_FULL = 'Jawaharlal Nehru Technological University Anantapur';
-const DEFAULT_DESC = 'Jawaharlal Nehru Technological University Anantapur — excellence in technical education, research and innovation.';
+const SITE = 'JNTUA OTPRI';
+const SITE_FULL = 'Oil Technological & Pharmaceutical Research Institute (OTPRI)';
+const DEFAULT_DESC = 'JNTUA Oil Technological & Pharmaceutical Research Institute — a constituent institute of JNTU Anantapur offering pharmacy education, research and training.';
 // Canonical origin — set VITE_SITE_URL at build time; falls back to the runtime origin.
 export const SITE_URL = (import.meta.env.VITE_SITE_URL || (typeof window !== 'undefined' ? window.location.origin : 'https://jntua.ac.in')).replace(/\/$/, '');
 const LOGO = `${SITE_URL}/logo.png`;
