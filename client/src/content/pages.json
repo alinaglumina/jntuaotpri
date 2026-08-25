@@ -1,0 +1,2488 @@
+{
+ "genesis": {
+  "title": "Genesis of JNTUA",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "History & Origin"
+   },
+   {
+    "type": "p",
+    "text": "The College of Engineering, Anantapur was started at Guindy, Madras in 1946 and shifted to Anantapur in 1948. The college was initially affiliated to Madras University during 1946-1955 and to Sri Venkateswara University, Tirupathi during 1955-1972. In 1972, by an Act of State Legislature, JNT University was established at Hyderabad and the College of Engineering, Anantapur went into the fold of JNTU. Later in the year 2008, by an Act of AP State Legislature, JNTU was trifurcated into three independent universities viz., JNTU,Hyderabad, JNTU, Kakinada and JNTU Anantapur. JNTU College of Engineering, Anantapur became a constituent college of JNTUA and was renamed as JNTUA College of Engineering, Anantapur. The JNTUA College of Engineering, Pulivendula, established in the year 2006 and Oil Technology Research Institute (OTRI), Anantapur, established in the year 1948 also became constituent units of JNTUA. A new constituent college - JNTUA College of Engineering, Kalikiri established in 2013 also came under the fold of JNTUA. The OTRI was later renamed as Oil Technology and Pharmaceutical Research Institute (OTPRI), in 2016. In addition to the above four constituent colleges, the JNTUA has 98 Engineering Colleges, 33 Pharmacy Colleges and 29 stand-alone MBA/MCA colleges affiliated to it.Since its inception, JNTUA is committed to develop and nurture technological education and intends to produce technical manpower of high quality, comparable to the best in the world."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Key Milestones"
+   }
+  ]
+ },
+ "vision-mission": {
+  "title": "Vision & Mission",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Vision"
+   },
+   {
+    "type": "p",
+    "text": "To be a world-class Technological University to excel in teaching, innovative research and consultancy in the disciplines of Engineering, Science & Technology, Pharmaceutical Science and Management thereby empowering the stakeholders to compete globally."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Mission"
+   },
+   {
+    "type": "p",
+    "text": "To achieve the goals by continuously upgrading the curriculum catering to the societal needs and industrial requirements, by conducting research in intra, inter, multi and trans-disciplinary areas, and by imparting quality education for enhancing knowledge, employability skills and entrepreneurship capabilities through startup environment."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Quality Policy"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Motivating the students to take up challenges on current problems in the society and industry through innovation and incubation centers.",
+     "Providing exposure to state-of-the-art technology by establishing world-class laboratories.",
+     "Establishing virtual laboratories and ICT based class rooms for effective teaching & learning.",
+     "Imbibing the faculty with cutting edge technologies to take up competent R&D work for acquiring more number of patents.",
+     "Inculcating organizational skills, professional skills and ethical values amongst the faculty and students.",
+     "Promoting entrepreneurial skills amongst the students for the socio-economic development of the country.",
+     "Developing tangency with the industry by blending their needs into the curriculum."
+    ]
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Core Values"
+   }
+  ]
+ },
+ "goals": {
+  "title": "University Goals",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Strategic Goals 2025–2030"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Academic Excellence"
+   },
+   {
+    "type": "p",
+    "text": "Achieve Top 50 NIRF ranking; strengthen UG/PG programs with industry-relevant curriculum and outcome-based education."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Research Output"
+   },
+   {
+    "type": "p",
+    "text": "Increase research publications, patents, and funded projects by 50% over five years through dedicated Centers of Excellence."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Industry Connect"
+   },
+   {
+    "type": "p",
+    "text": "Establish 100+ active MoUs with leading industries for research, placement, and funded training programs."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Global Collaboration"
+   },
+   {
+    "type": "p",
+    "text": "Forge 25+ international partnerships; increase foreign student enrollment to 500+ by 2030."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Digital Transformation"
+   },
+   {
+    "type": "p",
+    "text": "Fully digitize administrative and academic processes; implement AI-driven learning management systems."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Sustainability"
+   },
+   {
+    "type": "p",
+    "text": "Achieve a Green Campus rating; implement solar energy and rainwater harvesting across all campuses."
+   }
+  ]
+ },
+ "policies": {
+  "title": "JNTUA Policies",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "University Policies"
+   }
+  ]
+ },
+ "anthem": {
+  "title": "JNTUA Anthem",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Official University Anthem"
+   },
+   {
+    "type": "p",
+    "text": "The JNTUA Anthem celebrates the spirit, heritage, and vision of our university."
+   },
+   {
+    "type": "p",
+    "text": "Admins can update this video from Admin › Site Settings › JNTUA Anthem."
+   }
+  ]
+ },
+ "chancellor": {
+  "title": "Chancellor",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Role of the Chancellor"
+   },
+   {
+    "type": "p",
+    "text": "His Excellency, the Governor of Andhra Pradesh, serves as the Chancellor of Jawaharlal Nehru Technological University Anantapur (JNTUA) by virtue of office. The Chancellor is the Head of the University and presides over the Convocation ceremonies."
+   },
+   {
+    "type": "p",
+    "text": "The Chancellor gives assent to the statutes and ordinances of the University, appoints the Vice-Chancellor, and exercises other powers as vested under the JNTUA Act 2008."
+   }
+  ]
+ },
+ "vice-chancellor": {
+  "title": "Vice-Chancellor",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Vice-Chancellor's Message"
+   },
+   {
+    "type": "p",
+    "text": "It is a matter of honor and immense pleasure that destiny has given me an opportunity to lead JNT University Anantapur."
+   },
+   {
+    "type": "p",
+    "text": "Higher education scenario globally has witnessed a significant change in approach and a remarkable growth. Higher education in India too, has readily adapted to the global demands and every institution has geared up to meet the global challenges by harnessing the latest technologies in education front. The move towards inter-disciplinary studies, research based and interactive learning with technology integration have opened up several options as well as created multiple challenges."
+   },
+   {
+    "type": "p",
+    "text": "In the year 2008, by an Act of AP State Legislature, JNTU was trifurcated into three independent universities viz., JNTU, Hyderabad, JNTU, Kakinada and JNTU Anantapur. JNTU College of Engineering, Anantapur became a constituent college of JNTUA and was renamed as JNTUA College of Engineering, Anantapur. The JNTUA College of Engineering, Pulivendula, established in the year 2006 and Oil Technology Research Institute (OTRI), Anantapur, established in the year 1948 also became constituent units of JNTUA. JNTUA College of Engineering, Kalikiri established in 2013 also constituent unit of JNTUA. The OTRI was later renamed as Oil Technology and Pharmaceutical Research Institute (OTPRI), in 2016. A new constituent college - JNTUA - SKIT, Srikalahasti established in 2025 also came under the fold of JNTUA."
+   },
+   {
+    "type": "p",
+    "text": "A strong believer and practitioner of the dictum \"Knowledge is Power\", JNT University Anantapur has been on the path of delivering quality education by developing the young human resources with ethical and moral values, while boosting their leadership qualities, research culture and innovative skills. The main objective of the University is to provide higher education of global standards and hence, all the programs are designed to meet international standards. Highly experienced and qualified faculty members, continuously engaged in the maintenance and enhancement of student-centric learning environment through innovative pedagogy, form the backbone of the University."
+   },
+   {
+    "type": "p",
+    "text": "At JNT University Anantapur, research, consultancy and innovation are regarded as our pillars of success. Most of the faculty members of the University are involved in research by attracting funded projects from various funding agencies. The outcome of the research is passed on to students through live projects from industries."
+   },
+   {
+    "type": "p",
+    "text": "JNT University Anantapur has introduced structured training programs on soft-skills and preparatory training for competitive examinations are offered to make students more employable and towards 100% placement. The entrepreneurship development activities and establishment of \"Technology Incubation Centers\" in the University extend full support to the budding entrepreneurs to nurture their ideas with innovation and creativity and establish an enterprise for knowledge transfer and wealth creation."
+   },
+   {
+    "type": "p",
+    "text": "I would like to conclude by quoting Guru Rabindranath Tagore that \"The higher education is that which does not merely give us information but makes our life in harmony with our existence.\""
+   }
+  ]
+ },
+ "rector": {
+  "title": "Rector",
+  "blocks": []
+ },
+ "registrar": {
+  "title": "Registrar",
+  "blocks": []
+ },
+ "exec-council": {
+  "title": "Executive Council",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Executive Council Members"
+   }
+  ]
+ },
+ "former-vcs": {
+  "title": "Former Vice-Chancellors",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Former Vice-Chancellors of JNTUA"
+   }
+  ]
+ },
+ "alumni": {
+  "title": "Alumni",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "JNTUA Alumni Network"
+   },
+   {
+    "type": "p",
+    "text": "JNTUA has a strong alumni network with thousands of graduates contributing to industry, academia, and public service across the globe. Register to stay connected and give back to your alma mater."
+   },
+   {
+    "type": "heading",
+    "level": 2,
+    "text": "Portal Login"
+   },
+   {
+    "type": "p",
+    "text": "Secured connection — JNTUA Web Portal"
+   }
+  ]
+ },
+"naac-extended-profile": { "title": "Extended Profile Metrics", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-1": { "title": "Criteria 1", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-2": { "title": "Criteria 2", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-3": { "title": "Criteria 3", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-4": { "title": "Criteria 4", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-5": { "title": "Criteria 5", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-6": { "title": "Criteria 6", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-criteria-7": { "title": "Criteria 7", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-workshops": { "title": "Workshops / Seminars", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"naac-ssr": { "title": "Self Study Report (SSR)", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-iqac-about": { "title": "About IQAC", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-iqac-functions": { "title": "Functions of IQAC", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-iqac-benefits": { "title": "Benefits of IQAC", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-iqac-initiatives": { "title": "Important Initiatives started at JNTUA", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-aishe-jntua": { "title": "JNTUA AISHE", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-aishe-reports": { "title": "AISHE Reports", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-nirf-jntua": { "title": "JNTUA NIRF", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+"aa-nirf-reports": { "title": "NIRF Reports", "blocks": [{ "type": "p", "text": "Details will be published soon." }] },
+ "dir-academic": {
+  "title": "Directorate of Academic & Planning",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Academic & Planning"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Prof. S.V. Satyanarayana"
+   },
+   {
+    "type": "p",
+    "text": "Director of Academic & Planning"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Welcome to Academic & Planning"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Recent Notifications NEW"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Courses Offered"
+   },
+   {
+    "type": "p",
+    "text": "Select a programme category from the menu above or use the tabs below."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "UG Programmes"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "PG Programmes"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "PG — Regular Courses"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "PG — Part Time"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Integrated Dual Degree Programmes"
+   },
+   {
+    "type": "p",
+    "text": "Five-year integrated programmes combining UG & PG degrees awarded simultaneously upon completion."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "MOU's List (Academic)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Research Programmes"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Add New Course"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Added Courses"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Curriculum & Syllabus"
+   },
+   {
+    "type": "p",
+    "text": "Select a programme from the dropdown menu above, or use the tabs below."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Under Graduate — Overview"
+   },
+   {
+    "type": "p",
+    "text": "4-year programme. Governed by regulations R15, R19, R20, R23 and onwards."
+   },
+   {
+    "type": "p",
+    "text": "4-year pharmacy programme. Access syllabi and regulations below."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "B.Tech — Overview"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "B.Tech — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "B.Tech — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "B.Pharm"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Post Graduate — Overview"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Tech — Overview"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Tech — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Tech — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "B.Pharm — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "B.Pharm — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Pharmacy — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Pharmacy — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "MBA — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "MBA — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "MCA — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "MCA — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Pharm.D & Pharm.D(PB) — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Pharm.D & Pharm.D(PB) — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Sc. — Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "M.Sc. — Course Structure & Syllabi"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "News Bulletin"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Circulars"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Uncategorised"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "p",
+    "text": "Periodical academic newsletters published by the Directorate of Academic & Planning, JNTUA."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Academic Senate"
+   },
+   {
+    "type": "p",
+    "text": "The Academic Senate is the supreme academic body of JNTUA, responsible for maintaining standards of teaching, examination, and research."
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Add Academic Senate Document"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Academic events, activities and achievements."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "p",
+    "text": "Director of Academic & Planning"
+   }
+  ]
+ },
+ "dir-audit": {
+  "title": "Directorate of Academic Audit",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Academic Audit"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Director of Academic Audit"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Academic Audit Directorate"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Courses Offered"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Curriculum"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "News Bulletin"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Academic Senate"
+   },
+   {
+    "type": "p",
+    "text": "The Academic Senate is the supreme academic body responsible for maintaining standards of teaching, examination, and research."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery content will appear here."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Academic Audit"
+   }
+  ]
+ },
+ "dir-admissions": {
+  "title": "Directorate of Admissions, Foreign Affairs & Alumni",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Admissions, Foreign Affairs & Alumni"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Admissions, Foreign Affairs & Alumni"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Admissions, Foreign Affairs & Alumni"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the Admissions, Foreign Affairs & Alumni directorate portal."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "MoU's / Collaborations"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "List of Foreign Students"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Distinguished Alumni"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Registrations"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Sponsored Gold Medals / Scholarships / Donations"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Emeritus"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "12(B) & 2(F) Certificates"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "UGC XI Plan"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "UGC XII Plan Grants"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "BTH Students List"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Admissions, Foreign Affairs & Alumni"
+   }
+  ]
+ },
+ "dir-evaluation": {
+  "title": "Directorate of Evaluation",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Evaluation"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Director of Evaluation"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Evaluation"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Controller of Examinations"
+   },
+   {
+    "type": "p",
+    "text": "Profile and contact details of the Controller of Examinations."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Additional Controller of Examinations"
+   },
+   {
+    "type": "p",
+    "text": "Overview of ACOE office."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ACE-I"
+   },
+   {
+    "type": "p",
+    "text": "Additional Controller of Examinations - I details."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ACE-II"
+   },
+   {
+    "type": "p",
+    "text": "Additional Controller of Examinations - II details."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ACE-III"
+   },
+   {
+    "type": "p",
+    "text": "Additional Controller of Examinations - III details."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Application Forms"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Results"
+   },
+   {
+    "type": "p",
+    "text": "Results are available on the official portal."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery images managed via Admin Dashboard."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Evaluation"
+   }
+  ]
+ },
+ "dir-rd": {
+  "title": "Directorate of Research & Development",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Research & Development"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Research & Development"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Research & Development"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "This directorate is responsible for Research & Development at JNTUA and its affiliated institutions."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Ph.D Scholars Admitted"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Syllabus — R18"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Syllabus — R21"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Guidelines"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Applications for Recognition and Research Centre"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "List of Research Centres"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Regulations"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery images managed via Admin Dashboard."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Research & Development"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "R21 — Research & Publication Ethics"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "R18 — Research Methodology"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "R18 — IPR"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "R18 — Part 1 & Part 2 Subjects"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Engineering — Constituent Units"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Engineering — Affiliated Colleges"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Pharmacy — Constituent Units"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Pharmacy — Affiliated Colleges"
+   }
+  ]
+ },
+ "dir-placements": {
+  "title": "Directorate of IR, Placements & Sponsored Research",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Industrial Relations, Placements & Sponsored Research"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Industrial Relations, Placements & Sponsored Research"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Industrial Relations, Placements & Sponsored Research"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Placements"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Patents Published/Granted"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Research Seed Grant"
+   },
+   {
+    "type": "p",
+    "text": "Details of Research Seed Grant schemes and applications."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Research Projects"
+   },
+   {
+    "type": "p",
+    "text": "List of ongoing and completed research projects."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Research Facilities"
+   },
+   {
+    "type": "p",
+    "text": "Available research facilities and laboratories at JNTUA."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Industrial Relations & Placements"
+   }
+  ]
+ },
+ "dir-consultancy": {
+  "title": "Directorate of Industrial Consultancy Services",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Industrial Consultancy & Services"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Industrial Consultancy & Services"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Industrial Consultancy & Services"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Infrastructure Resources"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Industrial Consultancy & Services"
+   }
+  ]
+ },
+ "dir-faculty": {
+  "title": "Directorate of Faculty Development & Women Empowerment",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Faculty Development & Women Empowerment Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Faculty Development & Women Empowerment Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Faculty Development & Women Empowerment Cell"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Internal Complaint Committee"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Programmes"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Faculty Dev & Women Empowerment"
+   }
+  ]
+ },
+ "dir-iqac": {
+  "title": "Internal Quality Assurance Cell",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Internal Quality Assurance Cell (IQAC)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Internal Quality Assurance Cell (IQAC)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Internal Quality Assurance Cell (IQAC)"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "2018 Committee"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "2022 Committee"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "SSR / Minutes"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Curriculum Feedback"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Parent Feedback"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Alumni Feedback"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Department-wise Feedback Action Taken Report"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Research Policies"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Code of Conduct"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Anti Ragging"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Research Seed Grant"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Startup & Innovation Policy"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "UGC Minimum Standards for Award of Ph.D Degree"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "University IT Policy"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NAAC Certificate"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NBA Certificate"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NIRF"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Green Audit"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Environment Audit"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ISO Certificate"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "JNTUA ISO QMS 9001:2015 Certificate"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "AQAR"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "SSR"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Internal Quality Assurance Cell"
+   }
+  ]
+ },
+ "dir-skill": {
+  "title": "Directorate of Skill, Software Development & Incubation Centre",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Skill, Software Development & Incubation Centre"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Skill, Software Development & Incubation Centre"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Skill, Software Development & Incubation Centre"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Events"
+   },
+   {
+    "type": "p",
+    "text": "Upcoming and past skill development events and workshops."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Company Links"
+   },
+   {
+    "type": "p",
+    "text": "Industry partner companies and their collaboration details."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Dassault Systems"
+   },
+   {
+    "type": "p",
+    "text": "JNTUA Dassault Systems Center of Excellence details and programmes."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Siemens Centre of Excellence"
+   },
+   {
+    "type": "p",
+    "text": "JNTUA Siemens Centre of Excellence details and programmes."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Services"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Facilities"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Startups"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Partners"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Incubatee"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Mentors"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Investors"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Advisory Board"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Skill & Incubation Centre"
+   }
+  ]
+ },
+ "dir-ipr": {
+  "title": "Directorate of Intellectual Property Rights",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Intellectual Property Rights (IPR)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Intellectual Property Rights (IPR)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Intellectual Property Rights (IPR)"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Newsletter"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery images managed via Admin Dashboard."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Directorate of Intellectual Property Rights"
+   }
+  ]
+ },
+ "dir-otpri": {
+  "title": "Oil Technological & Pharmaceutical Research Institute",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Oil Technological & Pharmaceutical Research Institute (OTPRI)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Oil Technological & Pharmaceutical Research Institute (OTPRI)"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Oil Technological & Pharmaceutical Research Institute (OTPRI)"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About College"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Accreditations"
+   },
+   {
+    "type": "p",
+    "text": "Content coming soon."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ISO"
+   },
+   {
+    "type": "p",
+    "text": "Content coming soon."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NAAC"
+   },
+   {
+    "type": "p",
+    "text": "Content coming soon."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Salient Features of Institution"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Approvals"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Pharmacy History & Evolution of Pharmacy"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "JNTUA Anthem"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Faculty"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Faculty — Pharmacy"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Faculty — Food Technology"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Admissions"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Courses Offered"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Fee Structure"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Library"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Admitted Details"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "University Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Internal Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Malpractice Rules"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Circulars"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Department — Pharmacy"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Department — Food Technology"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Career Guidance / Placement Cell"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Grievance Redressal Cell"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Students & Committees"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "SC/ST Committee"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Women Empowerment Committee"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Anti Ragging Documents"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gender Sensitisation"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Swayam Central"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ePG Pathashala"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "National Digital Library of India"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Shodhganga"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "E-ShodhSindhu"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Vidwan / Profile Page"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Swayam Plus"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Programmes Organised"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NIPER Ranks"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "GPAT Ranks"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "APPGECET Ranks"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery images managed via Admin Dashboard."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Oil Technological & Pharmaceutical Research Institute"
+   }
+  ]
+ },
+ "dir-sms": {
+  "title": "School of Management Studies",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "School of Management Studies"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "School of Management Studies"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "School of Management Studies"
+   },
+   {
+    "type": "p",
+    "text": "Welcome to the directorate portal. Content loading..."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "About"
+   },
+   {
+    "type": "p",
+    "text": "Content loading..."
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "p",
+    "text": "Loading…"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "AICTE Approval Orders"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Courses Offered"
+   },
+   {
+    "type": "p",
+    "text": "Content coming soon."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Syllabus"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Guest Lectures"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Previous Papers"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Master Time Table of MBA"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Alumni"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Students Club"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Student Activities"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Admissions"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "RTI Act"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Library"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NIRF"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "ISO"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "School of Management Studies"
+   }
+  ]
+ },
+ "unit-nss": {
+  "title": "NSS Cell",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "NSS Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Dr. Mamatha"
+   },
+   {
+    "type": "p",
+    "text": "NSS Cell Coordinator"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NSS Cell"
+   },
+   {
+    "type": "p",
+    "text": "The National Service Scheme (NSS) Cell at JNTUA coordinates community service activities, social awareness programs, and youth development initiatives. Students participate in cleanliness drives, blood donation camps, rural development projects, and environmental conservation programs. NSS volunteers contribute to nation-building through selfless service and social responsibility."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Notifications"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "NSS Units under JNTUA"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Activities — 2016-17"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Activities — 2017-18"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery photos will appear here."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "NSS Cell"
+   }
+  ]
+ },
+ "unit-scst": {
+  "title": "SC/ST Cell",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "SC/ST Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Coordinator"
+   },
+   {
+    "type": "p",
+    "text": "SC/ST Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "SC/ST Cell"
+   },
+   {
+    "type": "p",
+    "text": "The SC/ST Cell ensures the welfare and support of students from Scheduled Caste and Scheduled Tribe communities. It coordinates scholarships, grievance redressal, and special coaching programs to support their academic and personal development. The cell works in coordination with the Government of Andhra Pradesh's welfare schemes to provide stipends, fee reimbursements, and other benefits to eligible students."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery photos will appear here."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "SC/ST Cell"
+   }
+  ]
+ },
+ "unit-anti-ragging": {
+  "title": "Anti-Ragging Cell",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Anti-Ragging Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Coordinator"
+   },
+   {
+    "type": "p",
+    "text": "Anti-Ragging Cell"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Anti-Ragging Cell"
+   },
+   {
+    "type": "p",
+    "text": "JNTUA maintains a strict zero-tolerance policy against ragging. The Anti-Ragging Cell monitors student behavior, investigates complaints, and takes strict disciplinary action as per UGC/AICTE regulations. National Anti-Ragging Helpline: 1800-180-5522 (Toll Free). Email: antiragging@jntua.ac.in"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery photos will appear here."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Anti-Ragging Cell"
+   }
+  ]
+ },
+ "unit-pro": {
+  "title": "Public Relations Office",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Public Relations Officer"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Coordinator"
+   },
+   {
+    "type": "p",
+    "text": "Public Relations Officer"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Public Relations Officer"
+   },
+   {
+    "type": "p",
+    "text": "The Public Relations Office handles media interactions, press releases, event coverage, and communication with the public and stakeholders. It maintains the university's public image and coordinates with national and regional media."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery photos will appear here."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Public Relations Office"
+   }
+  ]
+ },
+ "unit-sports": {
+  "title": "Sports Council",
+  "blocks": [
+   {
+    "type": "heading",
+    "level": 1,
+    "text": "Sports Council"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Coordinator"
+   },
+   {
+    "type": "p",
+    "text": "Sports Council"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Quick Links"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Sports Council"
+   },
+   {
+    "type": "p",
+    "text": "The Sports Council promotes sports and physical fitness among students and staff. JNTUA has excellent sports facilities including cricket grounds, badminton courts, basketball courts, volleyball courts, and a modern gymnasium. The university produces several inter-university and national-level sports champions annually."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Downloads"
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Gallery"
+   },
+   {
+    "type": "p",
+    "text": "Gallery photos will appear here."
+   },
+   {
+    "type": "heading",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "type": "heading",
+    "level": 4,
+    "text": "Director"
+   },
+   {
+    "type": "p",
+    "text": "Sports Council"
+   }
+  ]
+ }
+}

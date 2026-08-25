@@ -1,0 +1,15 @@
+# ===================================================
+# JNTUAWEB v2 — client/.env
+# Fill in <PLACEHOLDER> values before building/deploying.
+# Vite bakes these into the bundle at BUILD TIME, so they
+# must be set in Vercel's Environment Variables before
+# the build runs (not just at runtime).
+# ===================================================
+
+# Your JNTUAWEB v2 backend URL on Render, e.g.:
+# https://jntuaweb-server.onrender.com
+VITE_API_BASE=<your_render_backend_url>
+
+# Public-facing site URL (used for canonical links, SEO tags, etc.)
+# Falls back to https://jntua.ac.in in code if left unset.
+VITE_SITE_URL=https://jntuaweb.vercel.app
