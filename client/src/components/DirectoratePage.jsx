@@ -96,7 +96,7 @@ export default function DirectoratePage({ resolveKey }) {
   return (
     <>
       <HeroSlider slides={slides} />
-      <PageShell title={title || 'Home'}>
+      <PageShell>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[280px_1fr]">
           <aside className="space-y-6">
             {director && (
