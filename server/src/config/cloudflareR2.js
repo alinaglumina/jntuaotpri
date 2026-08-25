@@ -17,12 +17,12 @@ const r2 = new S3Client({
 const BUCKET = process.env.R2_BUCKET_NAME;
 const PUBLIC_BASE = process.env.R2_PUBLIC_BASE_URL; // e.g. https://pub-xxxx.r2.dev or your custom domain, no trailing slash
 
-// Uploads a local file to R2 under jntuaweb/<subfolder>/, then returns its
+// Uploads a local file to R2 under <subfolder>/, then returns its
 // permanent public URL + object key (needed later to delete/replace the asset).
 // Mirrors uploadToCloudinary's signature exactly so callers need no changes.
 export async function uploadToR2(localPath, subfolder) {
   const ext = path.extname(localPath);
-  const key = `jntuaweb/${subfolder}/${Date.now()}_${crypto.randomBytes(4).toString('hex')}${ext}`;
+  const key = `${subfolder}/${Date.now()}_${crypto.randomBytes(4).toString('hex')}${ext}`;
 
   // Stream the file instead of reading it fully into memory — critical for
   // large uploads (videos, big PDFs) on memory-constrained hosting like Render.
@@ -49,7 +49,7 @@ export async function uploadToR2(localPath, subfolder) {
 // avoids platform request timeouts (e.g. Render) for big files (videos, PDFs).
 export async function getPresignedUploadUrl(subfolder, originalFilename, contentType) {
   const ext = path.extname(originalFilename);
-  const key = `jntuaweb/${subfolder}/${Date.now()}_${crypto.randomBytes(4).toString('hex')}${ext}`;
+  const key = `${subfolder}/${Date.now()}_${crypto.randomBytes(4).toString('hex')}${ext}`;
 
   const command = new PutObjectCommand({
     Bucket: BUCKET,
