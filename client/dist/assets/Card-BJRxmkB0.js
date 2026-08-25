@@ -1,1 +1,0 @@
-import{j as d}from"./data-BWB7JUfP.js";function i({as:s="div",hoverable:a=!1,className:r="",children:o,...t}){return d.jsx(s,{className:`rounded-lg bg-surface shadow-card ${a?"transition-shadow hover:shadow-lift":""} ${r}`,...t,children:o})}export{i as C};
