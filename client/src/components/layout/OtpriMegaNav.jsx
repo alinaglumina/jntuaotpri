@@ -3,9 +3,52 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { useDirectorateMenu } from '../../api/public.js';
 import { buildDynamicTabs } from '../../utils/directorateTabs.js';
 
+// Checks whether any descendant leaf of a node matches the active tab —
+// used to highlight a whole branch (e.g. "Academics") when a deeply nested
+// child (e.g. Academics > Faculty > Pharmacy) is the active page.
+function containsActive(node, activeTab) {
+  if (!node.children) return node.item?.menuKey === activeTab;
+  return node.children.some((c) => containsActive(c, activeTab));
+}
+
+// Recursive flyout submenu — any depth of nesting (e.g. Academics > Faculty >
+// Pharmacy). Each level tracks its own open child so only one branch shows.
+function FlyoutMenu({ nodes, activeTab }) {
+  const [openIndex, setOpenIndex] = useState(null);
+  return (
+    <div className="min-w-[220px] rounded-lg bg-white py-1 shadow-lift" onMouseLeave={() => setOpenIndex(null)}>
+      {nodes.map((n, i) => {
+        const isActiveBranch = containsActive(n, activeTab);
+        if (n.children) {
+          return (
+            <div key={n.label} className="relative" onMouseEnter={() => setOpenIndex(i)}>
+              <button type="button" className={`flex w-full items-center justify-between gap-3 px-4 py-2 text-left text-sm hover:bg-navy/5 ${isActiveBranch ? 'font-semibold text-crimson' : 'text-ink'}`}>
+                {n.label} <i className="fa-solid fa-chevron-right text-[9px]" aria-hidden="true" />
+              </button>
+              {openIndex === i && (
+                <div className="absolute left-full top-0 z-10">
+                  <FlyoutMenu nodes={n.children} activeTab={activeTab} />
+                </div>
+              )}
+            </div>
+          );
+        }
+        return (
+          <Link
+            key={n.item?.menuKey}
+            to={`/?tab=${n.item?.menuKey}`}
+            className={`block px-4 py-2 text-sm hover:bg-navy/5 ${activeTab === n.item?.menuKey ? 'font-semibold text-crimson' : 'text-ink'}`}
+          >
+            {n.label}
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
 // Header dropdown navigation, built from the same OTPRI menu-tree data the
-// homepage content area renders — so the two always stay in sync. Top-level
-// items with children show a hover dropdown; leaves link via ?tab=<menuKey>.
+// homepage content area renders — so the two always stay in sync.
 export default function OtpriMegaNav() {
   const { data: items = [] } = useDirectorateMenu('otpri');
   const tabs = buildDynamicTabs(items);
@@ -21,7 +64,7 @@ export default function OtpriMegaNav() {
         {tabs.map((t, i) => {
           const isLeaf = !t.children;
           const menuKey = t.item?.menuKey;
-          const isActive = isLeaf ? activeTab === menuKey : (t.children || []).some((c) => c.item?.menuKey === activeTab);
+          const isActive = isLeaf ? activeTab === menuKey : containsActive(t, activeTab);
 
           if (isLeaf) {
             return (
@@ -44,17 +87,8 @@ export default function OtpriMegaNav() {
                 {t.label} <i className="fa-solid fa-chevron-down text-[9px]" aria-hidden="true" />
               </button>
               {openIndex === i && (
-                <div className="absolute left-0 top-full z-20 min-w-[220px] rounded-b-lg bg-white py-1 shadow-lift">
-                  {t.children.map((c) => (
-                    <Link
-                      key={c.item?.menuKey}
-                      to={`/?tab=${c.item?.menuKey}`}
-                      onClick={() => setOpenIndex(null)}
-                      className={`block px-4 py-2 text-sm hover:bg-navy/5 ${activeTab === c.item?.menuKey ? 'font-semibold text-crimson' : 'text-ink'}`}
-                    >
-                      {c.label}
-                    </Link>
-                  ))}
+                <div className="absolute left-0 top-full z-20">
+                  <FlyoutMenu nodes={t.children} activeTab={activeTab} />
                 </div>
               )}
             </div>
