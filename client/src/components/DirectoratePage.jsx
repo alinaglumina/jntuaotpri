@@ -95,13 +95,11 @@ export default function DirectoratePage({ resolveKey }) {
     : staticDirector;
   const tabs = dynamicItems.length > 0 ? buildDynamicTabs(dynamicItems) : staticTabs;
   const flat = flattenLeaves(tabs);
-  // Match by the menu item's stable menuKey (set via header nav's ?tab=...),
-  // falling back to the first tab (Home) when no param or no match.
-  const active = (tabParam && flat.find((t) => t.item?.menuKey === tabParam)) || flat[0];
-  const isHome = !tabParam || tabParam === 'home';
 
   // Department pages (Pharmacy, Food Technology) get a dedicated template:
   // dark sidebar + either the "Welcome to X" hero overview or a sub-page.
+  // They now have children (their own sub-pages), so flattenLeaves excludes
+  // them from `flat` (leaf-only) — detect them directly from tabParam first.
   const DEPARTMENT_KEYS = ['pharmacy', 'food-technology'];
   function findNode(nodes, menuKey) {
     for (const n of nodes) {
@@ -110,6 +108,19 @@ export default function DirectoratePage({ resolveKey }) {
     }
     return null;
   }
+  const isDeptLandingParam = DEPARTMENT_KEYS.includes(tabParam);
+
+  // Match by the menu item's stable menuKey (set via header nav's ?tab=...),
+  // falling back to the first tab (Home) when no param or no match.
+  let active;
+  if (isDeptLandingParam) {
+    const deptNodeDirect = findNode(tabs, tabParam);
+    active = deptNodeDirect ? { key: 'dept', label: deptNodeDirect.label, dynamic: true, item: deptNodeDirect.item } : flat[0];
+  } else {
+    active = (tabParam && flat.find((t) => t.item?.menuKey === tabParam)) || flat[0];
+  }
+  const isHome = !tabParam || tabParam === 'home';
+
   const activeMenuKey = active?.item?.menuKey;
   const activeParentKey = active?.item?.parentKey;
   const isDeptLanding = DEPARTMENT_KEYS.includes(activeMenuKey);
