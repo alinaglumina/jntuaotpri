@@ -185,8 +185,8 @@ export const RESOURCES = {
   },
   downloads: {
     label: 'Downloads', group: 'content', icon: 'fa-download', roles: ['admin', 'director'],
-    columns: ['title', 'category', 'section'],
-    fields: [F('title', 'Title', 'text', { required: true }), F('category', 'Category'),
+    columns: ['title', 'date', 'section'],
+    fields: [F('title', 'Title', 'text', { required: true }), F('date', 'Date', 'date'), F('category', 'Category'),
              F('section', 'Section'), F('attachment', 'File', 'file'), F('sortOrder', 'Order', 'number'),
              F('isActive', 'Active', 'checkbox', { default: true })],
   },

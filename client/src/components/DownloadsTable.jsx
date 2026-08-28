@@ -16,14 +16,16 @@ export default function DownloadsTable({ section }) {
         <thead className="bg-navy/5 text-navy">
           <tr>
             <th className="px-4 py-3 w-16">S.No</th>
+            <th className="px-4 py-3 w-32">Date</th>
             <th className="px-4 py-3">Title</th>
-            <th className="px-4 py-3 w-28 text-center">Attachment</th>
+            <th className="px-4 py-3 w-28 text-center">View/Download</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-line">
           {items.map((doc, i) => (
             <tr key={doc._id} className={i % 2 === 0 ? 'bg-white' : 'bg-navy/[0.02]'}>
               <td className="px-4 py-3 text-slate-500">{String(i + 1).padStart(2, '0')}.</td>
+              <td className="px-4 py-3 text-slate-700">{doc.date ? new Date(doc.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : '—'}</td>
               <td className="px-4 py-3 text-slate-700">{doc.title}</td>
               <td className="px-4 py-3 text-center">
                 {doc.attachment ? (

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 const schema = new mongoose.Schema({
   title:     { type: String, required: true, trim: true },
+  date:      { type: Date, default: null },
   category:  { type: String, default: 'General', index: true },
   section:   { type: String, default: '', index: true },  // directorate/unit scope
   attachment:{ type: String, default: '' },
