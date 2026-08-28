@@ -122,31 +122,33 @@ export default function DirectoratePage({ resolveKey }) {
     <>
       {isHome && <HeroSlider slides={slides} />}
       <PageShell title={isHome ? undefined : active?.label}>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-[280px_1fr]">
-          <aside className="space-y-6">
-            {director && (
-              <div className="flex flex-col items-center rounded-lg border border-slate-200 bg-white p-6 text-center shadow-sm">
-                {director.photo ? (
-                  <img src={director.photo} alt={director.name || director.role} className="h-28 w-28 rounded-full object-cover" />
-                ) : (
-                  <Avatar name={director.name} role={director.role} />
-                )}
-                <p className="mt-4 font-display font-semibold text-navy">{director.name || director.role}</p>
-                {director.name && <p className="text-sm text-slate-600">{director.role}</p>}
-              </div>
-            )}
+        <div className={`grid grid-cols-1 gap-8 ${isHome ? 'md:grid-cols-[280px_1fr]' : ''}`}>
+          {isHome && (
+            <aside className="space-y-6">
+              {director && (
+                <div className="flex flex-col items-center rounded-lg border border-slate-200 bg-white p-6 text-center shadow-sm">
+                  {director.photo ? (
+                    <img src={director.photo} alt={director.name || director.role} className="h-28 w-28 rounded-full object-cover" />
+                  ) : (
+                    <Avatar name={director.name} role={director.role} />
+                  )}
+                  <p className="mt-4 font-display font-semibold text-navy">{director.name || director.role}</p>
+                  {director.name && <p className="text-sm text-slate-600">{director.role}</p>}
+                </div>
+              )}
 
-            {quickLinks.length > 0 && (
-              <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                <h4 className="mb-2 font-display font-semibold text-navy">Quick Links</h4>
-                <ul className="space-y-1">
-                  {quickLinks.map((l, i) => (
-                    <li key={i}><a href={l.to} className="text-sm text-slate-700 hover:text-navy hover:underline">{l.label}</a></li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </aside>
+              {quickLinks.length > 0 && (
+                <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+                  <h4 className="mb-2 font-display font-semibold text-navy">Quick Links</h4>
+                  <ul className="space-y-1">
+                    {quickLinks.map((l, i) => (
+                      <li key={i}><a href={l.to} className="text-sm text-slate-700 hover:text-navy hover:underline">{l.label}</a></li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </aside>
+          )}
 
           <div>
             {notifications.length > 0 && (

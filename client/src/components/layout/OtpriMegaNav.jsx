@@ -3,12 +3,18 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { useDirectorateMenu } from '../../api/public.js';
 import { buildDynamicTabs } from '../../utils/directorateTabs.js';
 
+// These have their own children in the data (department sub-pages), but
+// should still render as plain leaf links in the header — their sub-pages
+// are navigated via the department page's own sidebar instead.
+const FLATTEN_KEYS = new Set(['pharmacy', 'food-technology']);
+
 // Checks whether any descendant leaf of a node matches the active tab —
 // used to highlight a whole branch (e.g. "Academics") when a deeply nested
 // child (e.g. Academics > Faculty > Pharmacy) is the active page.
 function containsActive(node, activeTab) {
-  if (!node.children) return node.item?.menuKey === activeTab;
-  return node.children.some((c) => containsActive(c, activeTab));
+  if (node.item?.menuKey === activeTab) return true;
+  if (node.children) return node.children.some((c) => containsActive(c, activeTab));
+  return false;
 }
 
 // Recursive flyout submenu — any depth of nesting (e.g. Academics > Faculty >
@@ -19,7 +25,7 @@ function FlyoutMenu({ nodes, activeTab }) {
     <div className="min-w-[220px] rounded-lg bg-white py-1 shadow-lift" onMouseLeave={() => setOpenIndex(null)}>
       {nodes.map((n, i) => {
         const isActiveBranch = containsActive(n, activeTab);
-        if (n.children) {
+        if (n.children && !FLATTEN_KEYS.has(n.item?.menuKey)) {
           return (
             <div key={n.label} className="relative" onMouseEnter={() => setOpenIndex(i)}>
               <button type="button" className={`flex w-full items-center justify-between gap-3 px-4 py-2 text-left text-sm hover:bg-navy/5 ${isActiveBranch ? 'font-semibold text-crimson' : 'text-ink'}`}>
@@ -77,7 +83,7 @@ export default function OtpriMegaNav() {
     <nav className="border-b border-line bg-navy" onMouseLeave={() => setOpenIndex(null)}>
       <div className="container flex flex-wrap items-stretch">
         {tabs.map((t, i) => {
-          const isLeaf = !t.children;
+          const isLeaf = !t.children || FLATTEN_KEYS.has(t.item?.menuKey);
           const menuKey = t.item?.menuKey;
           const isActive = isLeaf ? activeTab === menuKey : containsActive(t, activeTab);
 
