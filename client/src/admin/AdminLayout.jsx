@@ -110,10 +110,16 @@ export default function AdminLayout() {
   // Single-institute site (OTPRI): always show OTPRI's own menu tree directly,
   // no directorate-picker/collapsing needed since there's only one "directorate".
   if (isAdmin) {
+    // Online Resources are just external URL links (Swayam Central, ePG
+    // Pathashala, etc.) — nothing to edit as content, so hide them from the
+    // sidebar list entirely (still editable via "Manage menu items" if needed).
+    const otpriMenuFiltered = (menuByDirectorate['otpri'] || []).filter(
+      (item) => item.menuKey !== 'online-resources' && item.parentKey !== 'online-resources'
+    );
     const otpriItems = [
-      ...(menuByDirectorate['otpri']?.length
+      ...(otpriMenuFiltered.length
         ? [
-            ...menuByDirectorate['otpri'].map((item) => ({
+            ...otpriMenuFiltered.map((item) => ({
               to: menuItemHref(item, 'otpri'),
               label: `${'\u2003'.repeat(item.depth)}${item.label}`,
               icon: item.children.length ? 'fa-folder' : (TYPE_ICON[item.type] || 'fa-file'),
