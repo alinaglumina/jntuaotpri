@@ -4,6 +4,7 @@ import ContentPage from './ContentPage.jsx';
 import SafeHtml from './SafeHtml.jsx';
 import HeroSlider from './HeroSlider.jsx';
 import FacultyTable from './FacultyTable.jsx';
+import DepartmentPage from './DepartmentPage.jsx';
 import directorates from '../content/directorates.json';
 import { useDirectorateMenu, useSlides } from '../api/public.js';
 import { useQuery } from '@tanstack/react-query';
@@ -99,6 +100,24 @@ export default function DirectoratePage({ resolveKey }) {
   const active = (tabParam && flat.find((t) => t.item?.menuKey === tabParam)) || flat[0];
   const isHome = !tabParam || tabParam === 'home';
 
+  // Department pages (Pharmacy, Food Technology) get a dedicated template:
+  // dark sidebar + either the "Welcome to X" hero overview or a sub-page.
+  const DEPARTMENT_KEYS = ['pharmacy', 'food-technology'];
+  function findNode(nodes, menuKey) {
+    for (const n of nodes) {
+      if (n.item?.menuKey === menuKey) return n;
+      if (n.children) { const found = findNode(n.children, menuKey); if (found) return found; }
+    }
+    return null;
+  }
+  const activeMenuKey = active?.item?.menuKey;
+  const activeParentKey = active?.item?.parentKey;
+  const isDeptLanding = DEPARTMENT_KEYS.includes(activeMenuKey);
+  const isDeptChild = DEPARTMENT_KEYS.includes(activeParentKey);
+  const deptKey = isDeptLanding ? activeMenuKey : (isDeptChild ? activeParentKey : null);
+  const deptNode = deptKey ? findNode(tabs, deptKey) : null;
+  const deptSiblings = deptNode?.children || [];
+
   return (
     <>
       {isHome && <HeroSlider slides={slides} />}
@@ -151,7 +170,15 @@ export default function DirectoratePage({ resolveKey }) {
               </div>
             )}
 
-            {active && (
+            {active && deptKey && (
+              <DepartmentPage
+                departmentLabel={deptNode?.label || deptKey}
+                siblingPages={deptSiblings}
+                activeItem={active.item}
+                isLanding={isDeptLanding}
+              />
+            )}
+            {active && !deptKey && (
               <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
                 {active.dynamic ? <DynamicTabContent item={active.item} /> : <Blocks blocks={active.blocks} />}
               </div>
