@@ -33,6 +33,21 @@ function FlyoutMenu({ nodes, activeTab }) {
             </div>
           );
         }
+        // External-link items open the target site directly (new tab),
+        // skipping the in-site content page entirely.
+        if (n.item?.type === 'link' && n.item?.externalUrl) {
+          return (
+            <a
+              key={n.item?.menuKey}
+              href={n.item.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-2 px-4 py-2 text-sm text-ink hover:bg-navy/5"
+            >
+              {n.label} <i className="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400" aria-hidden="true" />
+            </a>
+          );
+        }
         return (
           <Link
             key={n.item?.menuKey}
