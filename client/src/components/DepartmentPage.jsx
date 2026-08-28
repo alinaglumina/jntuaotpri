@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SafeHtml from './SafeHtml.jsx';
+import FacultyTable from './FacultyTable.jsx';
 
 // Department landing/sub-page template — matches the reference design:
 // a dark department sidebar (icon, name, sub-page nav) alongside either the
@@ -40,6 +41,10 @@ export default function DepartmentPage({ departmentLabel, siblingPages, activeIt
               <p className="mx-auto max-w-2xl text-slate-600">{activeItem.body}</p>
             )}
           </div>
+        ) : activeItem?.menuKey === 'pharmacy-teaching-staff' ? (
+          <FacultyTable department="Pharmacy" />
+        ) : activeItem?.menuKey === 'food-technology-teaching-staff' ? (
+          <FacultyTable department="Food Technology" />
         ) : (
           <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-4 font-display text-2xl text-navy">{activeItem?.label}</h2>
