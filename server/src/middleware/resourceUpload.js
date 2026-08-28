@@ -96,3 +96,52 @@ export function resourceUploadMulti(field, subdir, maxCount = 8) {
     }
   });
 }
+
+// Multi-NAMED-field variant: handles several independent single-file fields
+// in one request (e.g. `photo` + `profileAttachment`), each going to its own
+// subdir. Unlike resourceUploadMulti (one field, many files → array), each
+// field here gets exactly one file → a single URL string, matching schemas
+// where each field is `String`, not `[String]`.
+// fieldsConfig: [[fieldName, subdir], ...]
+export function resourceUploadFields(fieldsConfig) {
+  const multerFields = fieldsConfig.map(([field]) => ({ name: field, maxCount: 1 }));
+  // All fields share one multer instance; subdir is only used for storage/URL
+  // organization per field below, not for multer's own upload directory.
+  const mw = uploader('_uploads').fields(multerFields);
+  return (req, res, next) => mw(req, res, async (err) => {
+    if (err) return next(err);
+    const filesByField = req.files || {};
+    const fieldNames = Object.keys(filesByField);
+    if (fieldNames.length === 0) return next();
+    try {
+      for (const [field, subdir] of fieldsConfig) {
+        const file = filesByField[field]?.[0];
+        if (!file) continue;
+        const check = validateFileContent(file.path);
+        if (!check.ok) { try { fs.unlinkSync(file.path); } catch {} continue; }
+        await optimizeImage(file.path);
+        const { url, publicId } = await uploadToCloudinary(file.path, subdir);
+        req.body[field] = url;
+        const ext = path.extname(file.originalname).replace('.', '').toLowerCase();
+        MediaFile.create({
+          folderId: null,
+          originalName: file.originalname,
+          storedName: file.filename,
+          ext,
+          mimeType: file.mimetype,
+          fileType: categorize(ext, file.mimetype),
+          size: file.size,
+          description: `Uploaded via ${subdir}`,
+          url,
+          cloudinaryId: publicId,
+          uploadedBy: req.user?.username || '',
+        }).catch(() => {});
+        try { fs.unlinkSync(file.path); } catch {}
+      }
+      next();
+    } catch (e) {
+      Object.values(filesByField).flat().forEach((f) => { try { fs.unlinkSync(f.path); } catch {} });
+      return next(ApiError.badRequest('File upload to storage failed: ' + e.message));
+    }
+  });
+}

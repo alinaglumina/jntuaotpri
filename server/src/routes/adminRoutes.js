@@ -4,7 +4,7 @@ import { crudController } from '../controllers/crudController.js';
 import { requireAuth } from '../middleware/auth.js';
 import { requireRole } from '../middleware/roleGuard.js';
 import { requirePermission } from '../middleware/permission.js';
-import { resourceUpload, resourceUploadMulti } from '../middleware/resourceUpload.js';
+import { resourceUpload, resourceUploadMulti, resourceUploadFields } from '../middleware/resourceUpload.js';
 import { getPresignedUploadUrl } from '../config/cloudflareR2.js';
 import asyncHandler from '../utils/asyncHandler.js';
 import { ok } from '../utils/ApiResponse.js';
@@ -66,6 +66,7 @@ for (const [key, def] of Object.entries(RESOURCES)) {
   const withUpload = [
     ...(def.upload ? [resourceUpload(def.upload[0], def.upload[1])] : []),
     ...(def.uploadMulti ? [resourceUploadMulti(def.uploadMulti[0], def.uploadMulti[1], def.uploadMulti[2])] : []),
+    ...(def.uploadFields ? [resourceUploadFields(def.uploadFields)] : []),
   ];
   router.get(`/${key}`, guard, c.list);
   router.get(`/${key}/:id`, guard, c.getOne);
