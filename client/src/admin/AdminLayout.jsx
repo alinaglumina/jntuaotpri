@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Outlet, useNavigate, useLocation, Navigate, Link } from 'react-router-dom';
 import { RESOURCES, GROUPS } from './resources.js';
 import { DIRECTORATES, UNITS } from '../content/nav.js';
-import { ASSESSMENT_ADMIN_GROUPS, ACADEMICS_ADMIN_GROUPS } from './assessmentContentMenu.js';
 import { useQuery } from '@tanstack/react-query';
 import { adminPageQuery } from '../api/queries.js';
 import { useAuth } from '../hooks/useAuth.js';
@@ -128,29 +127,17 @@ export default function AdminLayout() {
             { to: `/admin/r/directorate-menu?directorate=otpri`, label: 'Manage menu items', icon: 'fa-sliders', onClick: close },
           ]
         : []),
-      ...scopedEntries.filter(([key]) => key !== 'news').map(([key, d]) => ({
-        to: `/admin/r/${key}?directorate=otpri`, label: d.label, icon: d.icon, onClick: close,
-      })),
+      // Scoped resources (Notifications, Gallery, E-Magazines, Directorate
+      // Pages, Senate Documents, Tie-Ups & MOUs, Events, Circulars,
+      // Admissions, Examinations, Results, Video Gallery, etc.) are
+      // intentionally excluded — Faculty is already shown separately via
+      // the Institutional group, and OTPRI doesn't need the rest.
     ];
     groups.push({ label: 'OTPRI Site Pages', items: otpriItems });
   }
 
   // Curated CMS/admin groups (custom screens beyond the resource manifest).
   if (isAdmin) {
-    groups.push(...ASSESSMENT_ADMIN_GROUPS.map((g) => ({
-      label: g.label,
-      items: g.items.map((it) => ({
-        to: `/admin/r/page-content?editKey=${it.id}&heading=${encodeURIComponent(it.label)}`,
-        label: it.label, icon: 'fa-file-pen', onClick: close,
-      })),
-    })));
-    groups.push(...ACADEMICS_ADMIN_GROUPS.map((g) => ({
-      label: g.label,
-      items: g.items.map((it) => ({
-        to: `/admin/r/page-content?editKey=${it.id}&heading=${encodeURIComponent(it.label)}`,
-        label: it.label, icon: 'fa-file-pen', onClick: close,
-      })),
-    })));
     groups.push({ label: 'Communication', items: [
       { to: '/admin/messages', label: 'Contact Messages', icon: 'fa-inbox', onClick: close },
       { to: '/admin/enquiries', label: 'Enquiries', icon: 'fa-comments', onClick: close },
