@@ -118,10 +118,13 @@ export const RESOURCES = {
   faculty: {
     label: 'Faculty', group: 'institutional', icon: 'fa-chalkboard-user', roles: ['admin', 'director'],
     columns: ['name', 'designation', 'department'],
-    fields: [F('name', 'Name', 'text', { required: true }), F('designation', 'Designation'), F('department', 'Department'),
-             F('qualification', 'Qualification'), F('specialization', 'Specialization'), F('email', 'Email'),
-             F('mobile', 'Mobile'), F('photo', 'Photo', 'image'), F('sortOrder', 'Order', 'number'),
-             F('isActive', 'Active', 'checkbox', { default: true })],
+    fields: [F('name', 'Name of the Faculty', 'text', { required: true }), F('designation', 'Designation'),
+             F('department', 'Department (e.g. Pharmacy, Food Technology)'),
+             F('qualification', 'Qualification'), F('specialization', 'Specialization'),
+             F('pciRegistrationNo', 'PCI Registration No.'),
+             F('email', 'Email'), F('mobile', 'Mobile'), F('photo', 'Photo', 'image'),
+             F('profileAttachment', 'Profile (attachment)', 'file'),
+             F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
   },
   honoris: {
     label: 'Honoris Causa', group: 'institutional', icon: 'fa-award', roles: ['admin'],

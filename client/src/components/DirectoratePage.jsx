@@ -3,6 +3,7 @@ import PageShell from './PageShell.jsx';
 import ContentPage from './ContentPage.jsx';
 import SafeHtml from './SafeHtml.jsx';
 import HeroSlider from './HeroSlider.jsx';
+import FacultyTable from './FacultyTable.jsx';
 import directorates from '../content/directorates.json';
 import { useDirectorateMenu, useSlides } from '../api/public.js';
 import { useQuery } from '@tanstack/react-query';
@@ -27,6 +28,10 @@ function Avatar({ name, role }) {
 }
 
 function DynamicTabContent({ item }) {
+  // Special-cased faculty listing tables (Academics > Faculty > Pharmacy /
+  // Food Technology), keyed by menuKey rather than a generic content type.
+  if (item.menuKey === 'faculty-pharmacy') return <FacultyTable department="Pharmacy" />;
+  if (item.menuKey === 'faculty-food-technology') return <FacultyTable department="Food Technology" />;
   if (item.type === 'page') {
     return item.body ? <SafeHtml html={item.body} /> : <p className="text-slate-500">Content coming soon.</p>;
   }

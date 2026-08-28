@@ -13,6 +13,8 @@ const schema = new mongoose.Schema({
   publications:   { type: String, default: '' },
   achievements:   { type: String, default: '' },
   photo:          { type: String, default: '' },
+  pciRegistrationNo: { type: String, default: '' },
+  profileAttachment: { type: String, default: '' },
   isActive:       { type: Boolean, default: true },
   sortOrder:      { type: Number, default: 0, index: true },
 }, { timestamps: true });
