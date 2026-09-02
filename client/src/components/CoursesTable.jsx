@@ -5,7 +5,7 @@ import { coursesQuery } from '../api/queries.js';
 // Duration, Eligibility, and download links for Regulations/Syllabus.
 export default function CoursesTable() {
   const { data, isLoading } = useQuery(coursesQuery());
-  const items = data?.items || [];
+  const items = data || [];
 
   if (isLoading) return <div className="skeleton h-40 w-full rounded-lg" />;
   if (items.length === 0) return <p className="rounded-md border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">No courses listed yet.</p>;
