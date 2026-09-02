@@ -5,7 +5,7 @@ import { crudController } from '../controllers/crudController.js';
 import {
   GalleryItem, Mou, EMagazine, News, Administration,
   DirectorateContent, HonorisCausa, Slide, Faculty, ExecutiveCouncil, FormerViceChancellor,
-  NaacDocument, Course,
+  NaacDocument, Course, AdmittedDetail,
 } from '../models/index.js';
 
 const router = Router();
@@ -30,6 +30,7 @@ mount('/news',        News,         { defaultSort: '-createdAt',  baseFilter: ()
 mount('/honoris',     HonorisCausa, { defaultSort: '-convocationDate' });
 mount('/faculty',     Faculty,      { defaultSort: 'sortOrder',    baseFilter: (req) => ({ isActive: true, ...(req.query.department ? { department: req.query.department } : {}) }), searchable: ['name', 'department', 'designation'] });
 mount('/courses',    Course,       { defaultSort: 'sortOrder',    baseFilter: () => ({ isActive: true }), searchable: ['name', 'programme'] });
+mount('/admitted-details', AdmittedDetail, { defaultSort: 'sortOrder', baseFilter: () => ({ isActive: true }), searchable: ['courseName', 'category'] });
 mount('/executive-council',       ExecutiveCouncil,     { defaultSort: 'sortOrder', baseFilter: () => ({ isActive: true }), searchable: ['name'] });
 mount('/former-vice-chancellors', FormerViceChancellor, { defaultSort: 'sortOrder', baseFilter: () => ({ isActive: true }), searchable: ['name'] });
 mount('/administration', Administration, { defaultSort: 'createdAt' });

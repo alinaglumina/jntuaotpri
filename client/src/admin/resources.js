@@ -134,6 +134,14 @@ export const RESOURCES = {
              F('regulations', 'Regulations (attachment)', 'file'), F('syllabus', 'Syllabus (attachment)', 'file'),
              F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
   },
+  'admitted-details': {
+    label: 'Admitted Details', group: 'institutional', icon: 'fa-users-line', roles: ['admin'],
+    columns: ['courseName', 'academicYear', 'total'],
+    fields: [F('courseName', 'Course Name', 'text', { required: true }), F('category', 'Category'),
+             F('academicYear', 'Academic Year'), F('yearEstablished', 'Year Established'),
+             F('male', 'Male', 'number'), F('female', 'Female', 'number'), F('total', 'Total', 'number'),
+             F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
+  },
   honoris: {
     label: 'Honoris Causa', group: 'institutional', icon: 'fa-award', roles: ['admin'],
     columns: ['name', 'honorDegree', 'convocationDate'],

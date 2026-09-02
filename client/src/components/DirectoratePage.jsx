@@ -6,6 +6,7 @@ import HeroSlider from './HeroSlider.jsx';
 import DepartmentPage from './DepartmentPage.jsx';
 import DownloadsTable from './DownloadsTable.jsx';
 import CoursesTable from './CoursesTable.jsx';
+import AdmittedDetailsTable from './AdmittedDetailsTable.jsx';
 import directorates from '../content/directorates.json';
 import { useDirectorateMenu, useSlides } from '../api/public.js';
 import { useQuery } from '@tanstack/react-query';
@@ -33,6 +34,7 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'programmes-organised') return <DownloadsTable section="programmes-organised" />;
   if (item.menuKey === 'fee-structure') return <DownloadsTable section="fee-structure" showDate={false} titleLabel="Course/Program" attachmentLabel="Fee Details" />;
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
+  if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.type === 'page') {
     return item.body ? <SafeHtml html={item.body} /> : <p className="text-slate-500">Content coming soon.</p>;
   }

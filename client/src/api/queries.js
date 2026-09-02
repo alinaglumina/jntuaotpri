@@ -12,6 +12,7 @@ export const emagazinesQuery  = () => ({ queryKey: ['emagazines'],  queryFn: lis
 export const honorisQuery     = () => ({ queryKey: ['honoris'],     queryFn: list('/honoris') });
 export const facultyQuery     = () => ({ queryKey: ['faculty'],     queryFn: list('/faculty') });
 export const coursesQuery     = () => ({ queryKey: ['courses'],     queryFn: list('/courses') });
+export const admittedDetailsQuery = () => ({ queryKey: ['admitted-details'], queryFn: list('/admitted-details') });
 export const facultyByDeptQuery = (department) => ({ queryKey: ['faculty', department], queryFn: list('/faculty', department ? { department } : undefined), enabled: !!department });
 export const eventsQuery      = () => ({ queryKey: ['events'],      queryFn: list('/events') });
 export const executiveCouncilQuery = () => ({ queryKey: ['executive-council'], queryFn: list('/executive-council') });

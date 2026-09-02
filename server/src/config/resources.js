@@ -4,7 +4,7 @@ import {
   DacpFile, DafaDoc, PageContent,
   Event, Department, Student, Circular, Download, Menu,
   Admission, Examination, Result, ContentBlock,
-  Video, SeoMeta, NaacDocument, DirectorateMenuItem, NavMenuItem, Course,
+  Video, SeoMeta, NaacDocument, DirectorateMenuItem, NavMenuItem, Course, AdmittedDetail,
 } from '../models/index.js';
 
 // Each entry: model + upload config + which roles may write + list search fields.
@@ -19,6 +19,7 @@ export const RESOURCES = {
   slides:              { model: Slide,              upload: ['image', 'slider'],         roles: ['admin'] },
   faculty:             { model: Faculty,            uploadFields: [['photo', 'faculty'], ['profileAttachment', 'faculty-profiles']], searchable: ['name', 'department'], roles: ['admin', 'director'] },
   courses:             { model: Course,             uploadFields: [['regulations', 'course-regulations'], ['syllabus', 'course-syllabus']], searchable: ['name', 'programme'], roles: ['admin'] },
+  'admitted-details':  { model: AdmittedDetail,     searchable: ['courseName', 'category'], roles: ['admin'] },
   administration:      { model: Administration,     upload: ['photo', 'images'],         roles: ['admin'] },
   'executive-council':        { model: ExecutiveCouncil,      upload: ['photo', 'images'], searchable: ['name'], roles: ['admin'] },
   'former-vice-chancellors':  { model: FormerViceChancellor,  upload: ['photo', 'images'], searchable: ['name'], roles: ['admin'] },

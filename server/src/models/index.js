@@ -26,6 +26,7 @@ export { default as MediaFile }          from './MediaFile.js';
 export { default as Slide }              from './Slide.js';
 export { default as DafaDoc }            from './DafaDoc.js';
 export { default as Course }             from './Course.js';
+export { default as AdmittedDetail }     from './AdmittedDetail.js';
 export { default as Event }       from './Event.js';
 export { default as Department }  from './Department.js';
 export { default as Student }     from './Student.js';
