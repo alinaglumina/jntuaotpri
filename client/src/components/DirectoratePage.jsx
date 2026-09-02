@@ -31,6 +31,7 @@ function Avatar({ name, role }) {
 
 function DynamicTabContent({ item }) {
   if (item.menuKey === 'programmes-organised') return <DownloadsTable section="programmes-organised" />;
+  if (item.menuKey === 'fee-structure') return <DownloadsTable section="fee-structure" showDate={false} titleLabel="Course/Program" attachmentLabel="Fee Details" />;
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.type === 'page') {
     return item.body ? <SafeHtml html={item.body} /> : <p className="text-slate-500">Content coming soon.</p>;
