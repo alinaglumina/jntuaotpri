@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 // Reusable auto-advancing hero carousel. slides: [{ image?, title }].
 // Heading renders as a full-width bar flush at the bottom of the slide,
 // styled like the site's top ribbon (slim, dark bar, full width).
-export default function HeroSlider({ slides = [], interval = 6000, height = 'min-h-[480px]' }) {
+export default function HeroSlider({ slides = [], interval = 6000, height = 'min-h-[600px]' }) {
   const items = slides.length ? slides : [{ _id: 'd', title: 'Welcome to JNTUA' }];
   const [i, setI] = useState(0);
   const go = useCallback((d) => setI((p) => (p + d + items.length) % items.length), [items.length]);
