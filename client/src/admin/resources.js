@@ -126,6 +126,14 @@ export const RESOURCES = {
              F('profileAttachment', 'Profile (attachment)', 'file'),
              F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
   },
+  courses: {
+    label: 'Courses Offered', group: 'institutional', icon: 'fa-graduation-cap', roles: ['admin'],
+    columns: ['name', 'category', 'intake'],
+    fields: [F('name', 'Course Name', 'text', { required: true }), F('category', 'Category'),
+             F('intake', 'Intake'), F('duration', 'Duration'), F('eligibility', 'Eligibility', 'textarea'),
+             F('regulations', 'Regulations (attachment)', 'file'), F('syllabus', 'Syllabus (attachment)', 'file'),
+             F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
+  },
   honoris: {
     label: 'Honoris Causa', group: 'institutional', icon: 'fa-award', roles: ['admin'],
     columns: ['name', 'honorDegree', 'convocationDate'],

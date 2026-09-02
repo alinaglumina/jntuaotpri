@@ -5,7 +5,7 @@ import { crudController } from '../controllers/crudController.js';
 import {
   GalleryItem, Mou, EMagazine, News, Administration,
   DirectorateContent, HonorisCausa, Slide, Faculty, ExecutiveCouncil, FormerViceChancellor,
-  NaacDocument,
+  NaacDocument, Course,
 } from '../models/index.js';
 
 const router = Router();
@@ -29,6 +29,7 @@ mount('/emagazines',  EMagazine,    { defaultSort: '-issueDate' });
 mount('/news',        News,         { defaultSort: '-createdAt',  baseFilter: () => ({ isPublished: true }), searchable: ['title'] });
 mount('/honoris',     HonorisCausa, { defaultSort: '-convocationDate' });
 mount('/faculty',     Faculty,      { defaultSort: 'sortOrder',    baseFilter: (req) => ({ isActive: true, ...(req.query.department ? { department: req.query.department } : {}) }), searchable: ['name', 'department', 'designation'] });
+mount('/courses',    Course,       { defaultSort: 'sortOrder',    baseFilter: () => ({ isActive: true }), searchable: ['name', 'programme'] });
 mount('/executive-council',       ExecutiveCouncil,     { defaultSort: 'sortOrder', baseFilter: () => ({ isActive: true }), searchable: ['name'] });
 mount('/former-vice-chancellors', FormerViceChancellor, { defaultSort: 'sortOrder', baseFilter: () => ({ isActive: true }), searchable: ['name'] });
 mount('/administration', Administration, { defaultSort: 'createdAt' });
