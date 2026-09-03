@@ -205,7 +205,15 @@ export const RESOURCES = {
     label: 'Downloads', group: 'content', icon: 'fa-download', roles: ['admin', 'director'],
     columns: ['title', 'date', 'section'],
     fields: [F('title', 'Title', 'text', { required: true }), F('date', 'Date', 'date'), F('category', 'Category'),
-             F('section', 'Section'), F('attachment', 'File', 'file'), F('sortOrder', 'Order', 'number'),
+             F('section', 'Section', 'select', { required: true, options: [
+               { value: 'academics-downloads', label: 'Academics — Downloadable Documents' },
+               { value: 'programmes-organised', label: 'Programmes Organised' },
+               { value: 'fee-structure', label: 'Academics — Fee Structure' },
+               { value: 'internal-notifications', label: 'Examinations — Internal Notifications' },
+               { value: 'circulars', label: 'Examinations — Circulars' },
+               { value: 'malpractice-rules', label: 'Examinations — Malpractice Rules' },
+             ] }),
+             F('attachment', 'File', 'file'), F('sortOrder', 'Order', 'number'),
              F('isActive', 'Active', 'checkbox', { default: true })],
   },
   departments: {
