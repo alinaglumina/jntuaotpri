@@ -16,7 +16,7 @@ export default function HeroSlider({ slides = [], interval = 6000, height = 'min
           <motion.img key={s._id || i} src={s.image} alt=""
             initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="absolute inset-0 h-full w-full object-cover" />
+            className="absolute inset-0 h-full w-full object-cover object-top" />
         )}
       </AnimatePresence>
 
