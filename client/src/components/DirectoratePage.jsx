@@ -34,6 +34,8 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'programmes-organised') return <DownloadsTable section="programmes-organised" />;
   if (item.menuKey === 'fee-structure') return <DownloadsTable section="fee-structure" showDate={false} titleLabel="Course/Program" attachmentLabel="Fee Details" />;
   if (item.menuKey === 'internal-notifications') return <DownloadsTable section="internal-notifications" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'circulars') return <DownloadsTable section="circulars" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'malpractice-rules') return <DownloadsTable section="malpractice-rules" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.type === 'page') {
