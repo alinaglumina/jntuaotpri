@@ -113,6 +113,8 @@ export const RESOURCES = {
              F('body', 'Page content (only if Type = Content page)', 'html'),
              F('linkResource', 'Resource key (only if Type = Linked resource, e.g. "notifications")'),
              F('externalUrl', 'External URL (only if Type = External URL)'),
+             F('attachment1', 'Attachment 1 (e.g. Admissions\' Bio-data Form)', 'file'),
+             F('attachment2', 'Attachment 2 (e.g. Admissions\' Undertaking format)', 'file'),
              F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
   },
   faculty: {

@@ -24,7 +24,7 @@ export const RESOURCES = {
   'executive-council':        { model: ExecutiveCouncil,      upload: ['photo', 'images'], searchable: ['name'], roles: ['admin'] },
   'former-vice-chancellors':  { model: FormerViceChancellor,  upload: ['photo', 'images'], searchable: ['name'], roles: ['admin'] },
   'directorate-content': { model: DirectorateContent, upload: ['directorPhoto', 'images'], searchable: ['directorName'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
-  'directorate-menu':    { model: DirectorateMenuItem, searchable: ['label', 'menuKey'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
+  'directorate-menu':    { model: DirectorateMenuItem, uploadFields: [['attachment1', 'menu-attachments'], ['attachment2', 'menu-attachments']], searchable: ['label', 'menuKey'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
   'nav-menu':            { model: NavMenuItem, searchable: ['label', 'key'], roles: ['admin'] },
   honoris:             { model: HonorisCausa,       searchable: ['name'], roles: ['admin'] },
   senate:              { model: SenateDoc,          upload: ['filename', 'senate'],      searchable: ['title'], roles: ['admin', 'director'], sectionField: 'directorateKey' },

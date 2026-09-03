@@ -36,7 +36,27 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.type === 'page') {
-    return item.body ? <SafeHtml html={item.body} /> : <p className="text-slate-500">Content coming soon.</p>;
+    return (
+      <>
+        {item.body ? <SafeHtml html={item.body} /> : <p className="text-slate-500">Content coming soon.</p>}
+        {item.menuKey === 'admissions' && (item.attachment1 || item.attachment2) && (
+          <div className="mt-6 flex flex-wrap gap-3">
+            {item.attachment1 && (
+              <a href={item.attachment1} target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center gap-2 rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90">
+                <i className="fa-solid fa-file-pdf" aria-hidden="true" /> Bio-data Form
+              </a>
+            )}
+            {item.attachment2 && (
+              <a href={item.attachment2} target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center gap-2 rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90">
+                <i className="fa-solid fa-file-pdf" aria-hidden="true" /> Undertaking Format
+              </a>
+            )}
+          </div>
+        )}
+      </>
+    );
   }
   if (item.type === 'link') {
     return item.externalUrl ? (

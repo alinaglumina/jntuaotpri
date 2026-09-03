@@ -14,6 +14,8 @@ const schema = new mongoose.Schema({
   body:           { type: String, default: '' },     // HTML, used when type = 'page'
   linkResource:   { type: String, default: '' },      // resource key, used when type = 'resource'
   externalUrl:    { type: String, default: '' },      // used when type = 'link'
+  attachment1:    { type: String, default: '' },      // optional generic file attachment (e.g. Admissions' Bio-data Form)
+  attachment2:    { type: String, default: '' },      // optional second attachment (e.g. Admissions' Undertaking format)
   sortOrder:      { type: Number, default: 0, index: true },
   isActive:       { type: Boolean, default: true },
   updatedBy:      { type: mongoose.Schema.Types.ObjectId, ref: 'User', default: null },
