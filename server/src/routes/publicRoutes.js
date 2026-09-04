@@ -23,7 +23,7 @@ const mount = (path, Model, opts) => {
 };
 
 mount('/slides',      Slide,        { defaultSort: 'order',      baseFilter: () => ({ isActive: true }) });
-mount('/gallery',     GalleryItem,  { defaultSort: '-uploadedAt', searchable: ['caption', 'category'] });
+mount('/gallery',     GalleryItem,  { defaultSort: 'sortOrder',    baseFilter: () => ({ isActive: true }), searchable: ['eventName'] });
 mount('/mous',        Mou,          { defaultSort: '-mouDate',    baseFilter: () => ({ isActive: true }), searchable: ['orgName'] });
 mount('/emagazines',  EMagazine,    { defaultSort: '-issueDate' });
 mount('/news',        News,         { defaultSort: '-createdAt',  baseFilter: () => ({ isPublished: true }), searchable: ['title'] });

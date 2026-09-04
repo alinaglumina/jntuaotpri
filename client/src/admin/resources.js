@@ -44,8 +44,10 @@ export const RESOURCES = {
   },
   gallery: {
     label: 'Gallery', group: 'content', icon: 'fa-images', roles: ['admin', 'director'],
-    columns: ['caption', 'category', 'uploadedAt'],
-    fields: [directorateField(), F('filename', 'Image', 'image', { required: true }), F('caption', 'Caption'), F('category', 'Category')],
+    columns: ['eventName', 'sortOrder', 'isActive'],
+    fields: [directorateField(), F('eventName', 'Event Name', 'text', { required: true }),
+             F('images', 'Images (min 1, max 10)', 'images', { min: 1, max: 10 }),
+             F('sortOrder', 'Order', 'number'), F('isActive', 'Active', 'checkbox', { default: true })],
   },
   emagazines: {
     label: 'E-Magazines', group: 'content', icon: 'fa-book-open', roles: ['admin', 'director'],

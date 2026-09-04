@@ -7,6 +7,7 @@ import DepartmentPage from './DepartmentPage.jsx';
 import DownloadsTable from './DownloadsTable.jsx';
 import CoursesTable from './CoursesTable.jsx';
 import AdmittedDetailsTable from './AdmittedDetailsTable.jsx';
+import GalleryDisplay from './GalleryDisplay.jsx';
 import directorates from '../content/directorates.json';
 import { useDirectorateMenu, useSlides } from '../api/public.js';
 import { useQuery } from '@tanstack/react-query';
@@ -44,6 +45,7 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'students-committees') return <DownloadsTable section="students-committees" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
+  if (item.menuKey === 'gallery') return <GalleryDisplay />;
   if (item.type === 'page') {
     return (
       <>

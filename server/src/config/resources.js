@@ -13,7 +13,7 @@ import {
 export const RESOURCES = {
   notifications:       { model: Notification,       uploadMulti: ['attachments', 'documents', 8], searchable: ['title'], roles: ['admin', 'director', 'examiner'], sectionField: 'directorateKey' },
   news:                { model: News,               upload: ['attachment', 'documents'], searchable: ['title'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
-  gallery:             { model: GalleryItem,        upload: ['filename', 'gallery'],     searchable: ['caption'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
+  gallery:             { model: GalleryItem,        uploadMulti: ['images', 'gallery', 10], searchable: ['eventName'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
   mous:                { model: Mou,                upload: ['document', 'mous'],         searchable: ['orgName'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
   emagazines:          { model: EMagazine,          upload: ['filename', 'magazines'],   searchable: ['monthYear'], roles: ['admin', 'director'], sectionField: 'directorateKey' },
   slides:              { model: Slide,              upload: ['image', 'slider'],         roles: ['admin'] },
