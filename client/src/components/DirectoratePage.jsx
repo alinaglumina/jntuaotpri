@@ -36,6 +36,9 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'internal-notifications') return <DownloadsTable section="internal-notifications" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'circulars') return <DownloadsTable section="circulars" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'malpractice-rules') return <DownloadsTable section="malpractice-rules" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'niper-ranks') return <DownloadsTable section="niper-ranks" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'gpat-ranks') return <DownloadsTable section="gpat-ranks" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'appgecet-ranks') return <DownloadsTable section="appgecet-ranks" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.type === 'page') {
