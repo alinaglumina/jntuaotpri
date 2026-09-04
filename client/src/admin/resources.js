@@ -113,6 +113,7 @@ export const RESOURCES = {
                { value: 'link', label: 'External URL' },
              ] }),
              F('body', 'Page content (only if Type = Content page)', 'html'),
+             F('image', 'Photo (e.g. Director/Principal page)', 'image'),
              F('linkResource', 'Resource key (only if Type = Linked resource, e.g. "notifications")'),
              F('externalUrl', 'External URL (only if Type = External URL)'),
              F('attachment1', 'Attachment 1 (e.g. Admissions\' Bio-data Form)', 'file'),

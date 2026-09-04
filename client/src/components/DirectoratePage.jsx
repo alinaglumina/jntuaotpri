@@ -46,6 +46,27 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.menuKey === 'gallery') return <GalleryDisplay />;
+  if (item.menuKey === 'director-head' || item.menuKey === 'principal') {
+    return (
+      <div className="flex flex-col items-center text-center">
+        {item.image ? (
+          <img src={item.image} alt={item.label} className="h-40 w-40 rounded-full object-cover shadow-card" />
+        ) : (
+          <div className="grid h-40 w-40 place-items-center rounded-full bg-navy/5 text-navy shadow-card">
+            <i className="fa-solid fa-user text-4xl" aria-hidden="true" />
+          </div>
+        )}
+        <p className="mt-4 font-display text-lg font-semibold text-navy">{item.label}</p>
+        {item.body && <div className="mt-4 max-w-xl text-left"><SafeHtml html={item.body} /></div>}
+        {item.attachment1 && (
+          <a href={item.attachment1} target="_blank" rel="noopener noreferrer"
+             className="mt-4 inline-flex items-center gap-2 rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90">
+            <i className="fa-solid fa-file-pdf" aria-hidden="true" /> Bio-data
+          </a>
+        )}
+      </div>
+    );
+  }
   if (item.type === 'page') {
     return (
       <>
