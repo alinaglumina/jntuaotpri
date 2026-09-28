@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { useNotifications } from '../../api/public.js';
+import { useNews } from '../../api/public.js';
 const MAX_ITEMS = 15;
-// Scrolling "LIVE NEWS" ticker — pulls from Notifications tagged with the
-// "live-news" category, sorted by most recent, into a continuously moving marquee.
+// Scrolling "LIVE NEWS" ticker — pulls from the News resource, sorted by
+// most recent, into a continuously moving marquee.
 export default function NewsTicker() {
-  const { data: items = [] } = useNotifications('live-news');
+  const { data: items = [] } = useNews();
   const merged = [...items]
-    .sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
+    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     .slice(0, MAX_ITEMS);
   const loopItems = merged.length > 0 ? [...merged, ...merged] : [];
   return (
@@ -21,13 +21,21 @@ export default function NewsTicker() {
           ) : (
             <div className="ticker-track flex w-max gap-10 whitespace-nowrap">
               {loopItems.map((n, i) => (
-                <Link
-                  key={`${n._id}-${i}`}
-                  to={`/notifications/${n._id}`}
-                  className="text-xs font-medium text-navy hover:text-crimson"
-                >
-                  {n.title}
-                </Link>
+                n.attachment ? (
+                  <a
+                    key={`${n._id}-${i}`}
+                    href={n.attachment}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-medium text-navy hover:text-crimson"
+                  >
+                    {n.title}
+                  </a>
+                ) : (
+                  <span key={`${n._id}-${i}`} className="text-xs font-medium text-navy">
+                    {n.title}
+                  </span>
+                )
               ))}
             </div>
           )}
