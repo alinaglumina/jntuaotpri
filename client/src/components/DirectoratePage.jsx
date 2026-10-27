@@ -50,14 +50,14 @@ function DynamicTabContent({ item }) {
     return (
       <div className="flex flex-col items-center text-center">
         {item.image ? (
-          <img src={item.image} alt={item.label} className="h-40 w-40 rounded-full object-cover shadow-card" />
+          <img src={item.image} alt={item.label} className="mx-auto h-auto max-h-80 w-full max-w-[14rem] rounded-lg bg-white object-contain shadow-card" />
         ) : (
           <div className="grid h-40 w-40 place-items-center rounded-full bg-navy/5 text-navy shadow-card">
             <i className="fa-solid fa-user text-4xl" aria-hidden="true" />
           </div>
         )}
         <p className="mt-4 font-display text-lg font-semibold text-navy">{item.label}</p>
-        {item.body && <div className="mt-4 max-w-xl text-left"><SafeHtml html={item.body} /></div>}
+        {item.body && <div className="mt-4 max-w-xl text-center"><SafeHtml html={item.body} /></div>}
         {item.attachment1 && (
           <a href={item.attachment1} target="_blank" rel="noopener noreferrer"
              className="mt-4 inline-flex items-center gap-2 rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90">
@@ -193,7 +193,7 @@ export default function DirectoratePage({ resolveKey }) {
               {director && (
                 <div className="flex flex-col items-center rounded-lg border border-slate-200 bg-white p-6 text-center shadow-sm">
                   {director.photo ? (
-                    <img src={director.photo} alt={director.name || director.role} className="h-28 w-28 rounded-full object-cover" />
+                    <img src={director.photo} alt={director.name || director.role} className="mx-auto h-auto max-h-64 w-full max-w-[12rem] rounded-lg bg-white object-contain" />
                   ) : (
                     <Avatar name={director.name} role={director.role} />
                   )}
