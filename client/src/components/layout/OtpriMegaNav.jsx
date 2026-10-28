@@ -41,7 +41,7 @@ function FlyoutMenu({ nodes, activeTab }) {
         }
         // External-link items open the target site directly (new tab),
         // skipping the in-site content page entirely.
-        if (n.item?.type === 'link' && n.item?.externalUrl) {
+        if (n.item?.type === 'link' && n.item?.externalUrl && !/youtu\.?be/.test(n.item.externalUrl)) {
           return (
             <a
               key={n.item?.menuKey}
