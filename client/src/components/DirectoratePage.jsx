@@ -92,6 +92,22 @@ function DynamicTabContent({ item }) {
     );
   }
   if (item.type === 'link') {
+    const ytm = (item.externalUrl || '').match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);
+    if (ytm) {
+      return (
+        <div className="mx-auto w-full max-w-3xl">
+          <div className="aspect-video overflow-hidden rounded-lg bg-black shadow-card">
+            <iframe
+              className="h-full w-full"
+              src={`https://www.youtube-nocookie.com/embed/${ytm[1]}?rel=0`}
+              title={item.label}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      );
+    }
     return item.externalUrl ? (
       <a href={item.externalUrl} target="_blank" rel="noopener noreferrer"
          className="inline-flex items-center gap-2 rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90">
