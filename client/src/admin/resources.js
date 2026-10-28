@@ -221,6 +221,7 @@ export const RESOURCES = {
                { value: 'career-guidance-placement-cell', label: 'Student Corner — Career Guidance/Placement Cell' },
                { value: 'grievance-redressal-cell', label: 'Student Corner — Grievance Redressal Cell' },
                { value: 'students-committees', label: 'Student Corner — Students & Committees' },
+               { value: 'approvals', label: 'About — Approvals' },
              ] }),
              F('attachment', 'File', 'file'), F('sortOrder', 'Order', 'number'),
              F('isActive', 'Active', 'checkbox', { default: true })],
