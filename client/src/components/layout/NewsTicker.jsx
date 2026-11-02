@@ -11,13 +11,13 @@ export default function NewsTicker() {
   const loopItems = merged.length > 0 ? [...merged, ...merged] : [];
   return (
     <div className="overflow-hidden border-b border-gold/40 bg-gold/10">
-      <div className="container flex items-center gap-3 py-1.5">
-        <span className="flex shrink-0 items-center gap-1.5 rounded bg-crimson px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
+      <div className="container flex items-center gap-3 py-2.5">
+        <span className="flex shrink-0 items-center gap-1.5 rounded bg-crimson px-2.5 py-1 text-sm font-bold uppercase tracking-wide text-white">
           <i className="fa-solid fa-tower-broadcast" aria-hidden="true" /> Live News
         </span>
         <div className="relative flex-1 overflow-hidden">
           {merged.length === 0 ? (
-            <span className="text-xs font-medium text-slate-500">No live updates at the moment.</span>
+            <span className="text-base font-medium text-slate-500">No live updates at the moment.</span>
           ) : (
             <div className="ticker-track flex w-max gap-10 whitespace-nowrap">
               {loopItems.map((n, i) => (
@@ -27,12 +27,12 @@ export default function NewsTicker() {
                     href={n.attachment}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-medium text-navy hover:text-crimson"
+                    className="text-base font-semibold text-navy hover:text-crimson md:text-lg"
                   >
                     {n.title}
                   </a>
                 ) : (
-                  <span key={`${n._id}-${i}`} className="text-xs font-medium text-navy">
+                  <span key={`${n._id}-${i}`} className="text-base font-semibold text-navy md:text-lg">
                     {n.title}
                   </span>
                 )
@@ -43,7 +43,7 @@ export default function NewsTicker() {
       </div>
       <style>{`
         .ticker-track {
-          animation: ticker-scroll 40s linear infinite;
+          animation: ticker-scroll 55s linear infinite;
         }
         .ticker-track:hover {
           animation-play-state: paused;
