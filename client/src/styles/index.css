@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --navy: #003087; --crimson: #c8102e; --gold: #c9a227;
+    --navy: #6B1D3A; --crimson: #c8102e; --gold: #C8A45D;
     /* Semantic surfaces (light) — R G B triplets for <alpha-value> support */
     --canvas: 247 248 250;   /* page background  */
     --surface: 255 255 255;  /* cards / panels   */
     --content: 27 31 42;     /* primary text     */
     --muted: 100 116 139;    /* secondary text   */
     --line: 226 232 240;     /* borders          */
-    --brand: 0 48 135;       /* navy             */
+    --brand: 107 29 58;       /* navy             */
   }
   .dark {
     --canvas: 15 18 26;
@@ -19,7 +19,7 @@
     --content: 226 232 240;
     --muted: 148 163 184;
     --line: 42 50 66;
-    --brand: 120 150 210;    /* lighter navy for contrast on dark */
+    --brand: 226 160 186;    /* lighter navy for contrast on dark */
     color-scheme: dark;
   }
   html { scroll-behavior: smooth; }

@@ -1,0 +1,10 @@
+import 'dotenv/config';
+import mongoose from 'mongoose';
+import Download from '../models/Download.js';
+await mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI);
+const rows = await Download.find({ section: 'programmes-organised' }).sort({ date: -1 }).lean();
+console.log('Rows in DB:', rows.length);
+console.log('On R2:', rows.filter(r => r.attachment && !r.attachment.includes('jntua.ac.in')).length);
+console.log('Still pointing at old site:', rows.filter(r => /jntua\.ac\.in/.test(r.attachment)).length);
+rows.slice(0, 3).forEach(r => console.log(r.date?.toISOString().slice(0, 10), r.title, r.attachment));
+await mongoose.disconnect();

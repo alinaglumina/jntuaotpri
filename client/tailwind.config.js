@@ -6,9 +6,9 @@ export default {
     extend: {
       colors: {
         // JNTUA institutional identity — preserved from the legacy site.
-        navy:    { DEFAULT: '#003087', 700: '#002766', 900: '#001a45' },
+        navy:    { DEFAULT: '#6B1D3A', 700: '#531530', 900: '#3A0E22' },
         crimson: { DEFAULT: '#c8102e', 700: '#a50d26' },
-        gold:    { DEFAULT: '#c9a227' },
+        gold:    { DEFAULT: '#C8A45D' },
         ink:     '#1b1f2a',
         paper:   '#f7f8fa',
         // Semantic tokens (flip in dark mode via CSS variables) — use these for

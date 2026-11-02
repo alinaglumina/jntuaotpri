@@ -1,4 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
+import usePagination from '../hooks/usePagination.js';
+import Pagination from './ui/Pagination.jsx';
 import { coursesQuery } from '../api/queries.js';
 
 // Renders the Courses Offered table: Course Name, Category, Intake,
@@ -6,11 +8,13 @@ import { coursesQuery } from '../api/queries.js';
 export default function CoursesTable() {
   const { data, isLoading } = useQuery(coursesQuery());
   const items = data || [];
+  const pg = usePagination(items);
 
   if (isLoading) return <div className="skeleton h-40 w-full rounded-lg" />;
   if (items.length === 0) return <p className="rounded-md border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">No courses listed yet.</p>;
 
   return (
+    <>
     <div className="overflow-x-auto rounded-lg border border-line shadow-card">
       <table className="w-full text-left text-sm">
         <thead className="bg-navy/5 text-navy">
@@ -25,7 +29,7 @@ export default function CoursesTable() {
           </tr>
         </thead>
         <tbody className="divide-y divide-line">
-          {items.map((c, i) => (
+          {pg.rows.map((c, j) => { const i = j + pg.offset; return (
             <tr key={c._id} className={i % 2 === 0 ? 'bg-white' : 'bg-navy/[0.02]'}>
               <td className="px-4 py-3 font-medium text-slate-800">{c.name}</td>
               <td className="px-4 py-3 text-slate-700">{c.category || '—'}</td>
@@ -49,9 +53,11 @@ export default function CoursesTable() {
                 ) : <span className="text-slate-300">—</span>}
               </td>
             </tr>
-          ))}
+          ); })}
         </tbody>
       </table>
     </div>
+    <Pagination page={pg.page} total={pg.total} pageSize={pg.pageSize} onPage={pg.setPage} />
+    </>
   );
 }

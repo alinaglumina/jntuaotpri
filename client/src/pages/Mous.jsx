@@ -1,21 +1,25 @@
 import PageShell from '../components/PageShell.jsx';
+import usePagination from '../hooks/usePagination.js';
+import Pagination from '../components/ui/Pagination.jsx';
 import { Loading, ErrorState, EmptyState } from '../components/AsyncState.jsx';
 import { useMous } from '../api/public.js';
 
 export default function Mous() {
   const { data = [], isLoading, isError, error } = useMous();
+  const pg = usePagination(data);
   return (
     <PageShell title="Tie-Ups & MOUs" subtitle="National and international collaborations.">
       {isLoading ? <Loading /> : isError ? <ErrorState error={error} /> : data.length === 0 ? (
         <EmptyState label="MOUs will be listed here." />
       ) : (
+        <>
         <div className="overflow-hidden rounded-lg bg-white shadow-card">
           <table className="w-full text-left text-sm">
             <thead className="bg-navy/5 text-navy">
               <tr><th className="px-4 py-3">Organization</th><th className="px-4 py-3">Type</th><th className="px-4 py-3">Date</th><th className="px-4 py-3">Document</th></tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {data.map((m) => (
+              {pg.rows.map((m) => (
                 <tr key={m._id} className="hover:bg-navy/5">
                   <td className="px-4 py-3 font-medium">{m.orgName}</td>
                   <td className="px-4 py-3">{m.mouType}</td>
@@ -26,6 +30,8 @@ export default function Mous() {
             </tbody>
           </table>
         </div>
+        <Pagination page={pg.page} total={pg.total} pageSize={pg.pageSize} onPage={pg.setPage} />
+        </>
       )}
     </PageShell>
   );

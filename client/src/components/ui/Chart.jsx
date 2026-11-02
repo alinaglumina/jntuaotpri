@@ -1,6 +1,6 @@
 import { ResponsiveContainer, BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 // Thin wrapper over recharts with JNTUA colors. type: bar | line | pie.
-const COLORS = ['#003087', '#c8102e', '#c9a227', '#2f6f4f', '#5b7fb4', '#a50d26'];
+const COLORS = ['#6B1D3A', '#c8102e', '#c9a227', '#2f6f4f', '#5b7fb4', '#a50d26'];
 export default function Chart({ type = 'bar', data = [], xKey = 'name', series = [{ key: 'value' }], height = 280 }) {
   return (
     <div style={{ width: '100%', height }}>

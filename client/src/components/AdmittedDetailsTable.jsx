@@ -1,4 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
+import usePagination from '../hooks/usePagination.js';
+import Pagination from './ui/Pagination.jsx';
 import { admittedDetailsQuery } from '../api/queries.js';
 
 // Renders the Admitted Details table: Course Name, Category, Academic Year,
@@ -7,11 +9,13 @@ import { admittedDetailsQuery } from '../api/queries.js';
 export default function AdmittedDetailsTable() {
   const { data, isLoading } = useQuery(admittedDetailsQuery());
   const items = data || [];
+  const pg = usePagination(items);
 
   if (isLoading) return <div className="skeleton h-40 w-full rounded-lg" />;
   if (items.length === 0) return <p className="rounded-md border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">No admitted details available yet.</p>;
 
   return (
+    <>
     <div className="overflow-x-auto rounded-lg border border-line shadow-card">
       <table className="w-full text-left text-sm">
         <thead className="bg-navy/5 text-navy">
@@ -26,7 +30,7 @@ export default function AdmittedDetailsTable() {
           </tr>
         </thead>
         <tbody className="divide-y divide-line">
-          {items.map((r, i) => (
+          {pg.rows.map((r, j) => { const i = j + pg.offset; return (
             <tr key={r._id} className={i % 2 === 0 ? 'bg-white' : 'bg-navy/[0.02]'}>
               <td className="px-4 py-3 font-medium text-slate-800">{r.courseName}</td>
               <td className="px-4 py-3 text-slate-700">{r.category || '—'}</td>
@@ -36,9 +40,11 @@ export default function AdmittedDetailsTable() {
               <td className="px-4 py-3 text-center text-slate-700">{r.female ?? 0}</td>
               <td className="px-4 py-3 text-center font-semibold text-navy">{r.total ?? 0}</td>
             </tr>
-          ))}
+          ); })}
         </tbody>
       </table>
     </div>
+    <Pagination page={pg.page} total={pg.total} pageSize={pg.pageSize} onPage={pg.setPage} />
+    </>
   );
 }

@@ -1,4 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
+import usePagination from '../hooks/usePagination.js';
+import Pagination from './ui/Pagination.jsx';
 import { downloadsQuery } from '../api/queries.js';
 // Renders a S.No / [Date] / Title / Attachment table for a Downloads section.
 // Column labels and the Date column are configurable so this one component
@@ -6,9 +8,11 @@ import { downloadsQuery } from '../api/queries.js';
 export default function DownloadsTable({ section, showDate = true, titleLabel = 'Title', attachmentLabel = 'View/Download' }) {
   const { data, isLoading } = useQuery(downloadsQuery(section));
   const items = data?.items || [];
+  const pg = usePagination(items);
   if (isLoading) return <div className="skeleton h-40 w-full rounded-lg" />;
   if (items.length === 0) return null;
   return (
+    <>
     <div className="overflow-x-auto rounded-lg border border-line shadow-card">
       <table className="w-full text-left text-sm">
         <thead className="bg-navy/5 text-navy">
@@ -20,7 +24,7 @@ export default function DownloadsTable({ section, showDate = true, titleLabel = 
           </tr>
         </thead>
         <tbody className="divide-y divide-line">
-          {items.map((doc, i) => (
+          {pg.rows.map((doc, j) => { const i = j + pg.offset; return (
             <tr key={doc._id} className={i % 2 === 0 ? 'bg-white' : 'bg-navy/[0.02]'}>
               <td className="px-4 py-3 text-slate-500">{String(i + 1).padStart(2, '0')}.</td>
               {showDate && (
@@ -36,9 +40,11 @@ export default function DownloadsTable({ section, showDate = true, titleLabel = 
                 ) : <span className="text-slate-300">—</span>}
               </td>
             </tr>
-          ))}
+          ); })}
         </tbody>
       </table>
     </div>
+    <Pagination page={pg.page} total={pg.total} pageSize={pg.pageSize} onPage={pg.setPage} />
+    </>
   );
 }
